@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Visage</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            background-color: #EFEDEB;
+        }
+
+        .hero {
+            background-image: url('assets/silk-background.png');
+            background-size: cover;
+            background-position: top;
+            height: 945px;
+            color: #fff;
+            padding: 0 100px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 50px 0px 50px;
+        }
+
+        #logo {
+            position: absolute;
+            right: -50px;
+            width: 210px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            font-size: 20px;
+        }
+
+        nav a {
+            color: #E8D9C1;
+        }
+
+        .atual {
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 90px;
+            color: #E8D9C1;
+            margin: 0px;
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-style: italic;
+            margin-top: -45px;
+        }
+
+        .hero p {
+            color: #E8D9C1;
+            font-size: 20px;
+            max-width: 40%;
+            margin: 30px 0;
+        }
+
+        .hero-divider {
+            width: 100px;
+            height: 1px;
+            background-color: #ffffff8d;
+            margin: 20px 0px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .hero-buttons .btn {
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: #6B010F;
+            color: #D9D9D9;
+        }
+
+        .btn-outline {
+            border: 2px solid #D9D9D9;
+            color: #D9D9D9;
+        }
+
+        /*-----footer-----*/
+        footer {
+            background: linear-gradient(180deg, #310105 0%, #50040A 30%, #81010C 65%);
+            color: #D9D9D9;
+            padding: 3.75rem 6.25rem 1.5rem;
+            /* 60px 100px 24px */
+        }
+
+        /*fazer com grid*/
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.75rem;
+            /* 60px */
+        }
+
+        .footer-brand {
+            max-width: 21.875rem;
+            /* 350px */
+        }
+
+        .footer-logo {
+            width: 16rem;
+            /* 150px */
+            margin-bottom: 1.25rem;
+            /* 20px */
+        }
+
+        .footer-brand p {
+            font-size: 17px;
+            /* 15px */
+            line-height: 1.5;
+            color: #D9D9D9;
+        }
+
+        .footer-columns {
+            display: flex;
+            width: 65%;
+            justify-content: center;
+            gap: 100px; /*máximo 100px*/
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0 0 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column a {
+            color: #D9D9D9;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 1.5rem;
+            color: #D9D9D9;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <header>
+            <nav>
+                <a href="#" class="atual">Início</a>
+                <a href="#">A Velvet</a>
+                <a href="#">Métodos</a>
+                <a href="#">Serviços</a>
+                <a href="#">Termos e Privacidade</a>
+            </nav>
+            <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" id="logo">
+        </header>
+
+        <div class="hero-content">
+            <h1 class="title">Descubra sua beleza</h1>
+            <h1 class="subtitle">de forma inteligente.</h1>
+
+            <div class="hero-divider"></div>
+
+            <p>
+                Desbloqueie seu potencial com a nossa Inteligência Artificial. Tenha acesso a análises personalizadas,
+                recomendações exclusivas e a orientação de profissionais especializados, tudo em um só lugar.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#app" class="btn btn-primary">
+                    Baixar agora
+                </a>
+
+                <a href="recursos.html" class="btn btn-outline">
+                    Conheça os recursos
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section class="funcionalidades">
+        <h3>TUDO O QUE VOCÊ PRECISA</h3>
+        <h2>Conheça tudo o que o Velvet Visage pode fazer por você</h2>
+
+        <div>
+            <!--cards das funcionalidades-->
+        </div>
+    </section>
+    <section>
+        <!--carrossel-->
+    </section>
+    <section class="profissionais">
+        <h3>Profissionais perto de você</h3>
+        <h2>Encontre especialistas
+            em beleza com confiança.</h2>
+        <p>Busque por profissionais qualificados na sua região, veja avaliações reais de outras clientes e agende seu
+            atendimento com facilidade</p>
+    </section>
+    <section>
+        <h3>Desenvolvido para você</h3>
+        <h2>Tecnologia e beleza trabalhando juntas para você brilhar.</h2>
+        <div>
+            <h2>Pronta para descobrir a sua melhor versão?</h2>
+            <p>Baixe agora e comece sua jornada de transformação.</p>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" class="footer-logo">
+                <p>Tecnologia e beleza caminhando juntos pensando em você.</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">A Velvet</a></li>
+                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Equipe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Beauty Scan</a></li>
+                        <li><a href="#">Color Analysis</a></li>
+                        <li><a href="#">Skin Analysis</a></li>
+                        <li><a href="#">Chat com IA</a></li>
+                        <li><a href="#">Revista</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>@ 2026 Velvet Visage. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
