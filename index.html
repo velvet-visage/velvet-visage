@@ -11,46 +11,58 @@
             background-color: #EFEDEB;
         }
 
+
+        /* =========================================================
+   HERO
+   ========================================================= */
+
         .hero {
             background-image: url('assets/silk-background.png');
             background-size: cover;
             background-position: top;
-            height: 945px;
-            color: #fff;
+
+            height: 100vh;
+            max-height: 750px;
+
             padding: 0 100px;
-
-            display: flex;
-            flex-direction: column;
+            color: #fff;
         }
 
-        .hero-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+
+        /* =========================================================
+   HEADER
+   ========================================================= */
 
         header {
             position: relative;
+
             display: flex;
-            width: 100%;
             align-items: center;
             justify-content: center;
-            padding: 70px 50px 0px 50px;
+
+            width: 100%;
+            padding: 70px clamp(20px, 5vw, 50px) 0;
         }
+
+
+        /* Logo */
 
         #logo {
             position: absolute;
-            right: -50px;
-            width: 210px;
+            right: clamp(-50px, -3vw, -15px);
+            width: clamp(80px, 14vw, 210px);
         }
 
         nav {
             display: flex;
-            justify-content: center;
             align-items: center;
-            gap: 60px;
-            font-size: 20px;
+            justify-content: center;
+
+            gap: clamp(8px, 3.5vw, 60px);
+
+            font-size: clamp(12px, 1.5vw, 18px);
+
+            white-space: nowrap;
         }
 
         nav a {
@@ -61,11 +73,27 @@
             font-weight: 600;
         }
 
-        h1 {
+
+        /* =========================================================
+   CONTEÚDO DO HERO
+   ========================================================= */
+
+        .hero-content {
+            margin-top: 70px;
+        }
+
+
+        /* Títulos */
+
+        .hero h1,
+        .hero span {
+            margin: 0;
+
             font-family: "Cormorant Garamond", serif;
-            font-size: 90px;
+            font-size: clamp(48px, 6vw, 90px);
+
             color: #E8D9C1;
-            margin: 0px;
+            line-height: 1.1;
         }
 
         .title {
@@ -74,22 +102,36 @@
 
         .subtitle {
             font-style: italic;
-            margin-top: -45px;
+            font-weight: normal;
         }
 
+
+        /* Texto */
+
         .hero p {
-            color: #E8D9C1;
-            font-size: 20px;
             max-width: 40%;
             margin: 30px 0;
+
+            color: #E8D9C1;
+            font-size: 18px;
         }
+
+
+        /* Divisor */
 
         .hero-divider {
             width: 100px;
             height: 1px;
+
+            margin: 20px 0;
+
             background-color: #ffffff8d;
-            margin: 20px 0px;
         }
+
+
+        /* =========================================================
+   BOTÕES
+   ========================================================= */
 
         .hero-buttons {
             display: flex;
@@ -98,77 +140,125 @@
 
         .hero-buttons .btn {
             padding: 15px 25px;
+
             border-radius: 10px;
-            font-size: 20px;
-            text-decoration: none;
+
+            font-size: 17px;
             font-weight: 500;
+            text-decoration: none;
             text-transform: uppercase;
+
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease;
         }
+
+
+        /* Botão principal */
 
         .btn-primary {
             background-color: #6B010F;
             color: #D9D9D9;
         }
 
+        .btn-primary:hover {
+            background-color: #8A0A1A;
+            color: #FFFFFF;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* Botão com contorno */
+
         .btn-outline {
             border: 2px solid #D9D9D9;
             color: #D9D9D9;
         }
 
-        /*-----footer-----*/
-        footer {
-            background: linear-gradient(180deg, #310105 0%, #50040A 30%, #81010C 65%);
-            color: #D9D9D9;
-            padding: 3.75rem 6.25rem 1.5rem;
-            /* 60px 100px 24px */
+        .btn-outline:hover {
+            background-color: #D9D9D9;
+            color: #6B010F;
+
+            transform: translateY(-2px);
         }
 
-        /*fazer com grid*/
+
+        /* =========================================================
+   FOOTER
+   ========================================================= */
+
+        footer {
+            padding: 3.75rem 6.25rem 1.5rem;
+
+            background: linear-gradient(180deg,
+                    #310105 0%,
+                    #50040A 30%,
+                    #81010C 65%);
+
+            color: #D9D9D9;
+        }
+
+
+        /* Parte superior */
 
         .footer-top {
             display: flex;
             justify-content: space-between;
+
             gap: 3.75rem;
-            /* 60px */
         }
+
+
+        /* =========================================================
+   FOOTER — MARCA
+   ========================================================= */
 
         .footer-brand {
             max-width: 21.875rem;
-            /* 350px */
         }
 
         .footer-logo {
-            width: 16rem;
-            /* 150px */
+            width: clamp(250px, 14vw, 16rem);
             margin-bottom: 1.25rem;
-            /* 20px */
         }
 
         .footer-brand p {
-            font-size: 17px;
-            /* 15px */
-            line-height: 1.5;
             color: #D9D9D9;
+            font-size: 17px;
+            line-height: 1.5;
         }
+
+
+        /* =========================================================
+   FOOTER — COLUNAS
+   ========================================================= */
 
         .footer-columns {
             display: flex;
-            width: 65%;
             justify-content: center;
-            gap: 100px; /*máximo 100px*/
+
+            width: 65%;
+
+            /* 100px é o máximo */
+            gap: min(100px, 5vw);
         }
 
         .footer-column h4 {
+            margin: 0 0 1rem;
+
             font-size: 18px;
             font-weight: 700;
             text-transform: uppercase;
-            margin: 0 0 1rem;
         }
 
         .footer-column ul {
-            list-style: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
+
+            list-style: none;
         }
 
         .footer-column li {
@@ -179,13 +269,165 @@
             color: #D9D9D9;
             font-size: 16px;
             text-decoration: none;
+
+            transition: color 0.3s ease;
         }
 
+        .footer-column a:hover {
+            color: #E8D9C1;
+        }
+
+
+        /* =========================================================
+   FOOTER — PARTE INFERIOR
+   ========================================================= */
+
         .footer-bottom {
-            text-align: center;
-            font-size: 16px;
             margin-top: 1.5rem;
+
             color: #D9D9D9;
+            font-size: 16px;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+        /* Telas menores */
+
+        @media (max-width: 1000px) {
+
+            .hero {
+                padding: 0 60px;
+            }
+
+            header {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            nav {
+                gap: 35px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 70px;
+            }
+
+            .hero p {
+                max-width: 50%;
+            }
+        }
+
+
+        /* Tablets */
+
+        @media (max-width: 850px) {
+
+            .hero {
+                padding: 0 40px;
+            }
+
+            header {
+                padding-top: 40px;
+            }
+
+            nav {
+                gap: 20px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .hero p {
+                max-width: 65%;
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                gap: 15px;
+            }
+
+            .hero-buttons .btn {
+                padding: 12px 18px;
+                font-size: 14px;
+            }
+
+            footer {
+                padding: 3rem 3rem 1.5rem;
+            }
+
+            .footer-top {
+                gap: 30px;
+            }
+
+            .footer-columns {
+                width: 60%;
+            }
+        }
+
+
+        /* Celulares */
+
+        @media (max-width: 650px) {
+
+            .hero {
+                padding: 0 25px;
+            }
+
+            header {
+                padding-top: 30px;
+            }
+
+            nav {
+                gap: 12px;
+                font-size: 11px;
+            }
+
+            .hero-content {
+                margin-top: 30px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .subtitle {
+                margin-top: -20px;
+            }
+
+            .hero p {
+                max-width: 90%;
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-wrap: wrap;
+            }
+
+            .hero-buttons .btn {
+                padding: 10px 15px;
+                font-size: 12px;
+            }
+
+            footer {
+                padding: 2.5rem 1.5rem 1.5rem;
+            }
+
+            .footer-top {
+                flex-direction: column;
+            }
+
+            .footer-columns {
+                width: 100%;
+                gap: 30px;
+            }
         }
     </style>
 </head>
@@ -204,8 +446,9 @@
         </header>
 
         <div class="hero-content">
-            <h1 class="title">Descubra sua beleza</h1>
-            <h1 class="subtitle">de forma inteligente.</h1>
+            <h1 class="title">Descubra sua beleza <br>
+                <span class="subtitle">de forma inteligente.</span>
+            </h1>
 
             <div class="hero-divider"></div>
 
