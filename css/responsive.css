@@ -1,0 +1,137 @@
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* Telas menores */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 0 60px;
+    }
+
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav {
+        gap: 35px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .hero p {
+        max-width: 50%;
+    }
+}
+
+
+/* Tablets */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 0 40px;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+
+    nav {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .hero p {
+        max-width: 65%;
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 3rem 3rem 1.5rem;
+    }
+
+    .footer-top {
+        gap: 30px;
+    }
+
+    .footer-columns {
+        width: 60%;
+    }
+}
+
+
+/* Celulares */
+
+@media (max-width: 650px) {
+
+    .hero {
+        padding: 0 25px;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 11px;
+    }
+
+    .hero-content {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        margin-top: -20px;
+    }
+
+    .hero p {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        width: 100%;
+        gap: 30px;
+    }
+}
