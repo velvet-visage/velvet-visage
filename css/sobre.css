@@ -1,0 +1,242 @@
+body {
+    background-color: #EFEDEB;
+}
+
+section {
+    padding: 80px 100px;
+}
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #66060C;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #66060C;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    background-color: #66060C;
+
+    height: 100vh;
+    max-height: 750px;
+
+    padding: 0 100px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    color: #E8D9C1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/*-----------------------valores--------------------*/
+
+.sec-valores h3 {
+   text-align: center;
+}
+
+.container-card-valores {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.card-valores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-valores img {
+    background-color: rgba(223, 223, 222, 0.25);
+    border-radius: 50%;
+    border: 2px solid #a7a7a754;
+    padding: 25px;
+    width: 110px;
+}
+
+.card-valores h4 {
+    color: #66060C;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.card-valores p {
+    color: #484848;
+    font-size: 16px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 70px clamp(20px, 5vw, 50px) 0;
+}
+
+
+/* Logo */
+
+#logo {
+    position: absolute;
+    right: clamp(-50px, -3vw, -15px);
+    width: clamp(80px, 14vw, 210px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(8px, 3.5vw, 60px);
+
+    font-size: clamp(12px, 1.5vw, 18px);
+
+    white-space: nowrap;
+}
+
+nav a {
+    color: #E8D9C1;
+}
+
+.atual {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+        CONTEÚDO DO HERO
+        ========================================================= */
+
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: 3.75rem 6.25rem 1.5rem;
+
+    background: linear-gradient(180deg,
+            #310105 0%,
+            #50040A 45%,
+            #81010C 100%);
+
+    color: #D9D9D9;
+}
+
+
+/* Parte superior */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 3.75rem;
+}
+
+
+/* =========================================================
+   FOOTER — MARCA
+   ========================================================= */
+
+.footer-brand {
+    max-width: 21.875rem;
+}
+
+.footer-logo {
+    width: clamp(250px, 14vw, 16rem);
+    margin-bottom: 1.25rem;
+}
+
+.footer-brand p {
+    color: #D9D9D9;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER — COLUNAS
+   ========================================================= */
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+
+    width: 65%;
+
+    /* 100px é o máximo */
+    gap: min(100px, 5vw);
+}
+
+.footer-column h4 {
+    margin: 0 0 1rem;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #D9D9D9;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #E8D9C1;
+}
+
+
+/* =========================================================
+   FOOTER — PARTE INFERIOR
+   ========================================================= */
+
+.footer-bottom {
+    margin-top: 1.5rem;
+
+    color: #D9D9D9;
+    font-size: 16px;
+
+    text-align: center;
+}
