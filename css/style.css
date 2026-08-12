@@ -347,8 +347,9 @@ footer {
 
     width: 65%;
 
-    /* 100px é o máximo */
-    gap: min(100px, 5vw);
+    /*ajustar pq agr não tem mais as 3 colunas, só apenas 2*/
+    gap: min(100px, 5vw); 
+
 }
 
 .footer-column h4 {
