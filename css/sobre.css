@@ -31,7 +31,8 @@ h3 {
     background-color: #66060C;
 
     height: 100vh;
-    max-height: 750px;
+    max-height: 735px;
+    /*caber a imagem*/
 
     padding: 0 100px;
     color: #fff;
@@ -45,13 +46,27 @@ h3 {
     font-size: 30px;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.img-hero {
+    width: 60%;
+    max-width: 650px;
+}
+
 /*-----------------------valores--------------------*/
 
 .sec-valores h3 {
-   text-align: center;
+    text-align: center;
 }
 
-.container-card-valores {
+#container-card-valores {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
@@ -82,6 +97,26 @@ h3 {
 .card-valores p {
     color: #484848;
     font-size: 16px;
+    /*box-shadow: ;*/
+}
+
+/*---------------equipe----------------*/
+.card-membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-membro img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-membro h4 {
+    color: #66060C;
+    font-weight: 500;
+    margin: 15px 0 5px 0;
 }
 
 /* =========================================================
