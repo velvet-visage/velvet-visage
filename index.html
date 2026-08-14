@@ -47,7 +47,7 @@
         </div>
 
     </section>
-    <section class="funcionalidades" id="servicos">
+    <section class="sec-funcionalidades" id="servicos">
         <h3>TUDO O QUE VOCÊ PRECISA</h3>
         <h2>Conheça tudo o que o Velvet Visage pode fazer por você</h2>
 
@@ -56,22 +56,86 @@
 
         </div>
     </section>
-    <section style="background-color: #5f1111;">
-        <!--carrossel-->
+    <section class="sec-diferencial">
+
+        <div class="carrossel">
+
+            <h3>
+                POR QUE ESCOLHER O VELVET VISAGE?
+            </h3>
+
+            <div class="carrossel-content">
+
+                <button class="carrossel-btn btn-prev" aria-label="Anterior">
+                    &lt;
+                </button>
+
+                <div class="carrossel-text">
+
+                    <h2 id="carrossel-titulo">
+                        Inteligência Artificial<br>
+                        Personalizada
+                    </h2>
+
+                    <p id="carrossel-descricao">
+                        "Cada recomendação é adaptada às características
+                        únicas do seu rosto. Nossa IA analisa suas
+                        características para oferecer recomendações
+                        realmente personalizadas."
+                    </p>
+
+                </div>
+
+                <button class="carrossel-btn btn-next" aria-label="Próximo">
+                    &gt;
+                </button>
+
+            </div>
+
+            <div class="carrossel-indicadores" id="carrossel-indicadores">
+                <button class="indicador ativo"></button>
+                <button class="indicador"></button>
+                <button class="indicador"></button>
+                <button class="indicador"></button>
+            </div>
+
+        </div>
+
     </section>
-    <section class="profissionais">
+    <section class="sec-profissionais">
         <h3>Profissionais perto de você</h3>
         <h2>Encontre especialistas
-           <br> em beleza com confiança.</h2>
+            <br> em beleza com confiança.
+        </h2>
         <p>Busque por profissionais qualificados na sua região, veja avaliações reais de outras clientes e agende seu
             atendimento com facilidade</p>
+        <img src="assets/sec-profissionais-img.png" alt="">
+        <p id="frase-match">Seu match perfeito com os<em>(as)</em> melhores profissionais.</p>
+        <p id="palavras-chave">Busque - avalie - agende</p>
     </section>
-    <section>
+    <section class="sec-tecnologia">
         <h3>Desenvolvido para você</h3>
         <h2>Tecnologia e beleza <br> trabalhando juntas para <br> você brilhar.</h2>
+        <div class="cards-tecnologia">
+        </div>
+    </section>
+    <section class="sec-pitch">
+        <div>
+            <h3>Vídeo Pitch</h3>
+            <h2>O que produzimos até aqui.</h2>
+            <p>Em poucos minutos, conheça o problema que identificamos, nossa solução e impacto que o Velvet Visage pode
+                gerar.</p>
+        </div>
+        <!--Video/iframe-->
+    </section>
+    <section>
         <div class="cta-container">
             <h2>Pronta para descobrir a sua melhor versão?</h2>
             <p>Baixe agora e comece sua jornada de transformação.</p>
+            <div class="container-lojas">
+                <img src="assets/download/google-play.png" alt="Disponível na Google Play">
+                <img src="assets/download/app-store.png" alt="Disponível na App Store">
+            </div>
         </div>
     </section>
     <footer>
@@ -110,6 +174,8 @@
         </div>
     </footer>
     <script src="js/cards-func.js"></script>
+    <script src="js/cards-tech.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
 
 </html>

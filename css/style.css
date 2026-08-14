@@ -10,7 +10,7 @@ h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 50px;
     color: #66060C;
-    font-weight: bold;
+    font-weight: bolder;
     line-height: 1.1;
     margin: 10px 0;
 }
@@ -198,12 +198,12 @@ nav a {
 
 /*-----------section funcionalidades---------------*/
 
-.funcionalidades h3,
-.funcionalidades h2 {
+.sec-funcionalidades h3,
+.sec-funcionalidades h2 {
     text-align: center;
 }
 
-.funcionalidades h2 {
+.sec-funcionalidades h2 {
     width: 70%;
     margin: 10px auto 40px auto;
     line-height: 1.0;
@@ -224,23 +224,32 @@ nav a {
 
 .card-func {
     border-radius: 30px;
-    background-color: rgba(223, 223, 222, 0.3);
+    background-color: #dfdfde4d;
     padding: 20px;
     text-align: center;
-    border: 2px solid #B7B1B1;
+    border: 2px solid #b7b1b187;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-icon {
-    width: 100px;
-    height: 100px;
+.icon-background {
+    width: 110px;
+    height: 110px;
     margin-bottom: 10px;
     border-radius: 50%;
-    border: 2px solid #B7B1B1;
+    border: 2px solid #b7b1b177;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
 }
 
 .card-title {
@@ -255,21 +264,245 @@ nav a {
     font-weight: 500;
 }
 
+/* =========================================================
+   CARROSSEL
+   ========================================================= */
+
+.sec-diferencial {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 365px;
+    padding: 70px 40px;
+
+    background-image: url("../assets/background-carrossel.png");
+    background-size: cover;
+    background-position: center;
+
+    color: #E8D9C1;
+    overflow: hidden;
+}
+
+.carrossel {
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+}
+
+.carrossel h3 {
+    margin-bottom: 40px;
+    color: #E8D9C1;
+}
+
+.carrossel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.carrossel-text {
+    width: 100%;
+    max-width: 650px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carrossel-text h2 {
+    margin: 0 0 25px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(40px, 4vw, 55px);
+    font-weight: 500;
+    line-height: 0.95;
+
+    color: #E8D9C1;
+}
+
+.carrossel-text p {
+    margin: 0 auto;
+
+    max-width: 550px;
+
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.6;
+    font-weight: 300;
+
+    color: #E8D9C1;
+}
+
+.carrossel-btn {
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    background: transparent;
+
+    color: #E8D9C1;
+    font-size: 50px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.carrossel-btn:hover {
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+.indicador {
+    width: 15px;
+    height: 15px;
+
+    padding: 0;
+
+    border: 1px solid #E8D9C1;
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.indicador.ativo {
+    background-color: #E8D9C1;
+}
+
 
 /*--------profissionais---------*/
-.profissionais h2 {
+.sec-profissionais {
+    position: relative;
+    height: 1000px;
+}
+
+.sec-profissionais h2 {
     line-height: 1.0;
     margin: 20px 0;
 }
 
-.profissionais p {
+.sec-profissionais p {
     width: 55%;
     font-size: 18px;
     color: #1E1E1E;
     font-weight: 500;
 }
 
-/*-------------------*/
+.sec-profissionais img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    max-height: 960px;
+    object-position: top;
+    object-fit: cover;
+}
+
+#frase-match {
+    position: absolute;
+    bottom: 60px;
+    color: #D9D9D9;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    /*deixar tamanho que diminui com responsividade*/
+    width: 30%;
+    line-height: 1.1;
+}
+
+#frase-match em {
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-size: 26px;
+}
+
+#palavras-chave {
+    text-transform: uppercase;
+    color: #D9D9D9;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    text-align: right;
+    margin-right: 100px;
+    font-size: 20px;
+    /*deixar tamanho que diminui com responsividade*/
+}
+
+/*-----------sec tecnologia-----------*/
+.cards-tecnologia {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-tecnologia {
+    background-color: #dfdfde4d;
+    border-radius: 30px;
+    border: 2px solid #b7b1b184;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container-icon-card {
+    border-radius: 50%;
+    border: 2px solid #b7b1b1aa;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-tecnologia img {
+    padding: 20px;
+}
+
+.card-tecnologia h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #66060C;
+}
+
+.card-tecnologia p {
+    color: #484848;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*---------video pitch-----------*/
+.sec-pitch {
+    background-color: #45050D;
+    color: #E8D9C1;
+}
+
+.sec-pitch h2,
+.sec-pitch h3 {
+    color: #E8D9C1;
+}
+
+/*---------cta----------*/
 
 .cta-container {
     background-color: #580209;
@@ -290,13 +523,23 @@ nav a {
     font-style: italic;
 }
 
+.container-lojas {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.container-lojas img {
+    height: 60px;
+}
+
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
 footer {
-    padding: 3.75rem 6.25rem 1.5rem;
+    padding: 3.75rem clamp(40px, 7vw, 100px) 1.5rem;
 
     background: linear-gradient(180deg,
             #310105 0%,
@@ -311,9 +554,8 @@ footer {
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
-
-    gap: 3.75rem;
+    justify-content: space-around;
+    gap: clamp(30px, 5vw, 60px);
 }
 
 
@@ -322,11 +564,11 @@ footer {
    ========================================================= */
 
 .footer-brand {
-    max-width: 21.875rem;
+    width: min(350px, 35%);
 }
 
 .footer-logo {
-    width: clamp(250px, 14vw, 16rem);
+    width: clamp(195px, 16vw, 18rem);
     margin-bottom: 1.25rem;
 }
 
@@ -343,18 +585,17 @@ footer {
 
 .footer-columns {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: clamp(40px, 6vw, 100px);
+}
 
-    width: 65%;
-
-    /*ajustar pq agr não tem mais as 3 colunas, só apenas 2*/
-    gap: min(100px, 5vw); 
-
+.footer-column {
+    min-width: 130px;
 }
 
 .footer-column h4 {
     margin: 0 0 1rem;
-
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -363,7 +604,6 @@ footer {
 .footer-column ul {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -375,13 +615,13 @@ footer {
     color: #D9D9D9;
     font-size: 16px;
     text-decoration: none;
-
     transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
     color: #E8D9C1;
 }
+
 
 
 /* =========================================================
