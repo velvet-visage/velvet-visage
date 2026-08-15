@@ -443,15 +443,49 @@ nav a {
     right: 0;
     text-align: right;
     margin-right: 100px;
+    font-weight: 300;
     font-size: 20px;
     /*deixar tamanho que diminui com responsividade*/
 }
 
 /*-----------sec tecnologia-----------*/
+.sec-tecnologia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto 80px;
+    height: 100%; /*caber os mockups dentro, ele deve considerar a imagem mesmo ela sendo absolute*/
+}
+
+.mockups {}
+
+.mockups img {
+    width: 25%;
+    max-width: 300px;
+}
+
+#mock-resultado {
+    position: absolute;
+    bottom: 40%;
+}
+
+#mock-chat {
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+    top: 40%;
+}
+
+.sec-tecnologia-content {
+    width: 50%;
+}
+
 .cards-tecnologia {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 40px;
 }
 
 .card-tecnologia {
@@ -462,6 +496,7 @@ nav a {
     display: flex;
     gap: 20px;
     align-items: center;
+    width: 80%;
 }
 
 .container-icon-card {
@@ -472,6 +507,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .card-tecnologia img {
@@ -495,11 +531,36 @@ nav a {
 .sec-pitch {
     background-color: #45050D;
     color: #E8D9C1;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.sec-pitch-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sec-pitch video {
+    width: 100%;
+    height: 400px;
 }
 
 .sec-pitch h2,
 .sec-pitch h3 {
     color: #E8D9C1;
+}
+
+.sec-pitch h2 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.sec-pitch p {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /*---------cta----------*/

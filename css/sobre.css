@@ -29,7 +29,7 @@ h3 {
 
 .hero {
     position: relative;
-    height: clamp(600px, 67vh, 735px);
+    height: 100vh;
     max-height: 735px;
     padding: 0 clamp(40px, 7vw, 100px);
     background-color: #66060C;
@@ -176,7 +176,7 @@ nav a {
     font-size: 40px;
 }
 
-.cards-proposito{
+.cards-proposito {
     display: flex;
     gap: 30px;
     width: 80%;
@@ -212,7 +212,7 @@ nav a {
     font-weight: 700;
 }
 
-.card-proposito p{
+.card-proposito p {
     color: #484848;
 }
 
@@ -262,7 +262,7 @@ nav a {
 }
 
 /*-----------destaque-----------*/
-.sec-destaque{
+.sec-destaque {
     background-image: url('../assets/background-destaque.png');
     background-size: cover;
     background-position: bottom;
@@ -336,7 +336,7 @@ nav a {
     align-items: center;
 }
 
-.sec-cta-content{
+.sec-cta-content {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -349,7 +349,7 @@ nav a {
     font-weight: 600;
 }
 
-.sec-cta p{
+.sec-cta p {
     font-size: 18px;
 }
 
