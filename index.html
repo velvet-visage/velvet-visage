@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="assets/icons/icon-velvet-visage.png" type="image/x-icon">
 </head>
 
 <body>
@@ -151,8 +152,15 @@
             <h2>Pronta para descobrir a sua melhor versão?</h2>
             <p>Baixe agora e comece sua jornada de transformação.</p>
             <div class="container-lojas">
-                <img src="assets/download/google-play.png" alt="Disponível na Google Play">
-                <img src="assets/download/app-store.png" alt="Disponível na App Store">
+                <div class="container-lojas">
+                    <button onclick="alertDownload()">
+                        <img src="assets/download/google-play.png" alt="Disponível na Google Play">
+                    </button>
+
+                    <button onclick="alertDownload()">
+                        <img src="assets/download/app-store.png" alt="Disponível na App Store">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -202,6 +210,10 @@
         menuHamburguer.addEventListener("click", () => {
             nav.classList.toggle("menu-aberto");
         });
+
+        function alertDownload() {
+            alert("O aplicativo ainda não está disponível para download. Ele está em desenvolvimento.");
+        }
     </script>
 </body>
 

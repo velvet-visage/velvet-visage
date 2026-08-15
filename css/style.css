@@ -14,6 +14,7 @@ section {
     font-size: 25px;
     cursor: pointer;
 }
+
 /* =========================================================
    TIPOGRAFIA GERAL
    ========================================================= */
@@ -257,6 +258,12 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-func:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.15);
 }
 
 .icon-background {
@@ -509,6 +516,12 @@ nav a:hover::after {
     gap: clamp(15px, 2vw, 20px);
     align-items: center;
     width: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-tecnologia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.15);
 }
 
 .container-icon-card {
@@ -609,6 +622,20 @@ nav a:hover::after {
 
 .container-lojas img {
     height: clamp(45px, 5vw, 60px);
+}
+
+.container-lojas button {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-lojas button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 
