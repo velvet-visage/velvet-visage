@@ -20,6 +20,11 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#">Termos e Privacidade</a>
             </nav>
+
+            <button class="menu-hamburguer" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" id="logo">
         </header>
 
@@ -53,7 +58,6 @@
 
         <div class="container-cards">
             <!--cards das funcionalidades-->
-
         </div>
     </section>
     <section class="sec-diferencial">
@@ -103,12 +107,15 @@
 
     </section>
     <section class="sec-profissionais">
-        <h3>Profissionais perto de você</h3>
-        <h2>Encontre especialistas
-            <br> em beleza com confiança.
-        </h2>
-        <p>Busque por profissionais qualificados na sua região, veja avaliações reais de outras clientes e agende seu
-            atendimento com facilidade</p>
+        <div class="sec-profissioanis-content">
+            <h3>Profissionais perto de você</h3>
+            <h2>Encontre especialistas
+                <br> em beleza com confiança.
+            </h2>
+            <p>Busque por profissionais qualificados na sua região, veja avaliações reais de outras clientes e agende
+                seu
+                atendimento com facilidade</p>
+        </div>
         <img src="assets/sec-profissionais-img.png" alt="">
         <p id="frase-match">Seu match perfeito com os<em>(as)</em> melhores profissionais.</p>
         <p id="palavras-chave">Busque - avalie - agende</p>
@@ -121,8 +128,10 @@
         </div>
         <div class="sec-tecnologia-content">
             <h3>Desenvolvido para você</h3>
-            <h2>Tecnologia e beleza <br> trabalhando juntas para <br> você brilhar.</h2>
-            <div class="cards-tecnologia"></div>
+            <h2>Tecnologia e beleza <br> trabalhando juntas para você brilhar.</h2>
+            <div class="cards-tecnologia">
+                <!--cards das tecnologias-->
+            </div>
         </div>
     </section>
     <section class="sec-pitch">
@@ -132,10 +141,10 @@
             <p>Em poucos minutos, conheça o problema que identificamos, nossa solução e impacto que o Velvet Visage pode
                 gerar.</p>
         </div>
-        <video controls>
-            <source src="assets/videos/video-velvet-visage.mp4" type="video/mp4">
-            Seu navegador não suporta a reprodução de vídeos.
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5Uj_K36lYa4?si=6wShsyWlQRgqIZ-y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     <section>
         <div class="cta-container">
@@ -182,9 +191,18 @@
             <p>@ 2026 Velvet Visage. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="js/cards-func.js"></script>
     <script src="js/cards-tech.js"></script>
     <script src="js/carrossel.js"></script>
+    <script>
+        const menuHamburguer = document.querySelector(".menu-hamburguer");
+        const nav = document.querySelector("nav");
+
+        menuHamburguer.addEventListener("click", () => {
+            nav.classList.toggle("menu-aberto");
+        });
+    </script>
 </body>
 
 </html>

@@ -3,12 +3,24 @@ body {
 }
 
 section {
-    padding: 80px 100px;
+    padding: clamp(60px, 6vw, 80px) clamp(60px, 7vw, 100px);
 }
+
+.menu-hamburguer {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #E8D9C1;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* =========================================================
+   TIPOGRAFIA GERAL
+   ========================================================= */
 
 h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 50px;
+    font-size: clamp(40px, 3.5vw, 50px);
     color: #66060C;
     font-weight: bolder;
     line-height: 1.1;
@@ -18,7 +30,7 @@ h2 {
 h3 {
     text-transform: uppercase;
     color: #66060C;
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
     font-weight: 500;
 }
 
@@ -35,7 +47,7 @@ h3 {
     height: 100vh;
     max-height: 750px;
 
-    padding: 0 100px;
+    padding: 0 clamp(60px, 7vw, 100px);
     color: #fff;
 }
 
@@ -52,7 +64,7 @@ header {
     justify-content: center;
 
     width: 100%;
-    padding: 70px clamp(20px, 5vw, 50px) 0;
+    padding: clamp(50px, 5vw, 70px) clamp(20px, 5vw, 50px) 0;
 }
 
 
@@ -86,11 +98,11 @@ nav a {
 
 
 /* =========================================================
-        CONTEÚDO DO HERO
-        ========================================================= */
+   CONTEÚDO DO HERO
+   ========================================================= */
 
 .hero-content {
-    margin-top: 70px;
+    margin-top: clamp(50px, 5vw, 70px);
 }
 
 
@@ -121,20 +133,20 @@ nav a {
 
 .hero p {
     max-width: 40%;
-    margin: 30px 0;
+    margin: clamp(20px, 3vw, 30px) 0;
 
     color: #E8D9C1;
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
 }
 
 
 /* Divisor */
 
 .hero-divider {
-    width: 100px;
+    width: clamp(70px, 7vw, 100px);
     height: 1px;
 
-    margin: 20px 0;
+    margin: clamp(15px, 2vw, 20px) 0;
 
     background-color: #ffffff8d;
 }
@@ -146,15 +158,15 @@ nav a {
 
 .hero-buttons {
     display: flex;
-    gap: 30px;
+    gap: clamp(15px, 3vw, 30px);
 }
 
 .hero-buttons .btn {
-    padding: 15px 25px;
+    padding: clamp(12px, 1.5vw, 15px) clamp(18px, 2.5vw, 25px);
 
-    border-radius: 10px;
+    border-radius: clamp(8px, 1vw, 10px);
 
-    font-size: 17px;
+    font-size: clamp(14px, 1.5vw, 17px);
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -204,28 +216,28 @@ nav a {
 }
 
 .sec-funcionalidades h2 {
-    width: 70%;
-    margin: 10px auto 40px auto;
+    width: clamp(70%, 75vw, 80%);
+    margin: 10px auto clamp(30px, 4vw, 40px);
     line-height: 1.0;
 }
 
-/*CARDS*/
+
+/* CARDS */
 
 .container-cards {
     display: grid;
     align-self: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
-    width: 85%;
-    max-width: 1200px;
+    gap: clamp(25px, 4vw, 45px);
+    width: min(85%, 1200px);
     margin: 0 auto;
     justify-items: center;
 }
 
 .card-func {
-    border-radius: 30px;
+    border-radius: clamp(20px, 2.5vw, 30px);
     background-color: #dfdfde4d;
-    padding: 20px;
+    padding: clamp(15px, 2vw, 20px);
     text-align: center;
     border: 2px solid #b7b1b187;
     width: 90%;
@@ -235,12 +247,12 @@ nav a {
 }
 
 .icon-background {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 10px;
+    width: clamp(85px, 9vw, 110px);
+    height: clamp(85px, 9vw, 110px);
+    margin-bottom: clamp(8px, 1vw, 10px);
     border-radius: 50%;
     border: 2px solid #b7b1b177;
-    padding: 15px;
+    padding: clamp(10px, 1.5vw, 15px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,14 +265,15 @@ nav a {
 }
 
 .card-title {
-    font-size: 19px;
+    font-size: clamp(16px, 1.7vw, 19px);
     font-weight: 600;
-    margin-bottom: 7px;
+    margin-bottom: clamp(5px, 0.7vw, 7px);
     color: #66060C;
 }
 
 .card-description {
     color: #484848;
+    font-size: clamp(13px, 1.3vw, 16px);
     font-weight: 500;
 }
 
@@ -270,13 +283,12 @@ nav a {
 
 .sec-diferencial {
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    min-height: 365px;
-    padding: 70px 40px;
+    min-height: clamp(320px, 30vw, 365px);
+    padding: clamp(50px, 6vw, 70px) clamp(30px, 4vw, 40px);
 
     background-image: url("../assets/background-carrossel.png");
     background-size: cover;
@@ -284,17 +296,17 @@ nav a {
 
     color: #E8D9C1;
     overflow: hidden;
+    width: 100%;
 }
 
 .carrossel {
     width: 100%;
     max-width: 900px;
-
     text-align: center;
 }
 
 .carrossel h3 {
-    margin-bottom: 40px;
+    margin-bottom: clamp(25px, 4vw, 40px);
     color: #E8D9C1;
 }
 
@@ -302,56 +314,49 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 30px;
+    gap: clamp(15px, 3vw, 30px);
 }
 
 .carrossel-text {
     width: 100%;
     max-width: 650px;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
 }
 
 .carrossel-text h2 {
-    margin: 0 0 25px;
-
+    margin: 0 0 clamp(18px, 2.5vw, 25px);
     font-family: "Cormorant Garamond", serif;
     font-size: clamp(40px, 4vw, 55px);
     font-weight: 500;
     line-height: 0.95;
-
     color: #E8D9C1;
 }
 
 .carrossel-text p {
     margin: 0 auto;
-
     max-width: 550px;
-
-    font-size: 19px;
+    font-size: clamp(15px, 1.7vw, 19px);
     font-style: italic;
     line-height: 1.6;
     font-weight: 300;
-
     color: #E8D9C1;
 }
 
 .carrossel-btn {
     flex-shrink: 0;
-
-    width: 50px;
-    height: 50px;
-
+    width: clamp(40px, 5vw, 50px);
+    height: clamp(40px, 5vw, 50px);
     border: none;
     background: transparent;
-
     color: #E8D9C1;
-    font-size: 50px;
+    font-size: clamp(40px, 5vw, 50px);
     font-weight: 300;
-
     cursor: pointer;
-
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
 }
 
 .carrossel-btn:hover {
@@ -363,25 +368,18 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 8px;
-
-    margin-top: 30px;
+    gap: clamp(6px, 0.8vw, 8px);
+    margin-top: clamp(20px, 3vw, 30px);
 }
 
 .indicador {
-    width: 15px;
-    height: 15px;
-
+    width: clamp(11px, 1.5vw, 15px);
+    height: clamp(11px, 1.5vw, 15px);
     padding: 0;
-
     border: 1px solid #E8D9C1;
     border-radius: 50%;
-
     background: transparent;
-
     cursor: pointer;
-
     transition: background-color 0.3s ease;
 }
 
@@ -390,20 +388,21 @@ nav a {
 }
 
 
-/*--------profissionais---------*/
+/*-------- profissionais --------*/
+
 .sec-profissionais {
     position: relative;
-    height: 1000px;
+    height: clamp(750px, 70vw, 1000px);
 }
 
 .sec-profissionais h2 {
     line-height: 1.0;
-    margin: 20px 0;
+    margin: clamp(15px, 2vw, 20px) 0;
 }
 
 .sec-profissionais p {
-    width: 55%;
-    font-size: 18px;
+    width: clamp(50%, 55vw, 55%);
+    font-size: clamp(15px, 1.5vw, 18px);
     color: #1E1E1E;
     font-weight: 500;
 }
@@ -413,55 +412,55 @@ nav a {
     width: 100%;
     left: 0;
     bottom: 0;
-    max-height: 960px;
+    max-height: clamp(720px, 67vw, 960px);
     object-position: top;
     object-fit: cover;
 }
 
 #frase-match {
     position: absolute;
-    bottom: 60px;
+    bottom: clamp(40px, 5vw, 60px);
+
     color: #D9D9D9;
     font-family: "Cormorant Garamond", serif;
-    font-size: 40px;
-    /*deixar tamanho que diminui com responsividade*/
-    width: 30%;
+    font-size: clamp(30px, 4vw, 40px);
+
+    width: clamp(25%, 30vw, 30%);
     line-height: 1.1;
 }
 
 #frase-match em {
     font-family: "Cormorant Garamond", serif;
     font-style: normal;
-    font-size: 26px;
+    font-size: clamp(20px, 2.6vw, 26px);
 }
 
 #palavras-chave {
     text-transform: uppercase;
     color: #D9D9D9;
+
     position: absolute;
-    bottom: 60px;
+    bottom: clamp(40px, 5vw, 60px);
     right: 0;
+
     text-align: right;
-    margin-right: 100px;
+    margin-right: clamp(60px, 7vw, 100px);
     font-weight: 300;
-    font-size: 20px;
-    /*deixar tamanho que diminui com responsividade*/
+    font-size: clamp(15px, 2vw, 20px);
 }
 
-/*-----------sec tecnologia-----------*/
+/*----------- sec tecnologia -----------*/
+
 .sec-tecnologia {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: auto 80px;
-    height: 100%; /*caber os mockups dentro, ele deve considerar a imagem mesmo ela sendo absolute*/
+    margin: auto clamp(40px, 5.5vw, 80px);
 }
 
-.mockups {}
-
 .mockups img {
-    width: 25%;
+    width: clamp(20%, 25vw, 25%);
     max-width: 300px;
 }
 
@@ -473,7 +472,7 @@ nav a {
 #mock-chat {
     position: absolute;
     z-index: 2;
-    margin-left: 100px;
+    margin-left: clamp(60px, 7vw, 100px);
     top: 40%;
 }
 
@@ -484,17 +483,17 @@ nav a {
 .cards-tecnologia {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
+    gap: clamp(20px, 3vw, 30px);
+    margin-top: clamp(25px, 4vw, 40px);
 }
 
 .card-tecnologia {
     background-color: #dfdfde4d;
-    border-radius: 30px;
+    border-radius: clamp(20px, 2.5vw, 30px);
     border: 2px solid #b7b1b184;
-    padding: 25px;
+    padding: clamp(18px, 2.5vw, 25px);
     display: flex;
-    gap: 20px;
+    gap: clamp(15px, 2vw, 20px);
     align-items: center;
     width: 80%;
 }
@@ -502,8 +501,8 @@ nav a {
 .container-icon-card {
     border-radius: 50%;
     border: 2px solid #b7b1b1aa;
-    width: 110px;
-    height: 110px;
+    width: clamp(80px, 9vw, 110px);
+    height: clamp(80px, 9vw, 110px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,28 +510,29 @@ nav a {
 }
 
 .card-tecnologia img {
-    padding: 20px;
+    padding: clamp(12px, 2vw, 20px);
 }
 
 .card-tecnologia h4 {
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
     font-weight: 600;
-    margin-bottom: 7px;
+    margin-bottom: clamp(5px, 0.7vw, 7px);
     color: #66060C;
 }
 
 .card-tecnologia p {
     color: #484848;
     font-weight: 500;
-    font-size: 14px;
+    font-size: clamp(12px, 1.2vw, 14px);
 }
 
-/*---------video pitch-----------*/
+/*--------- video pitch -----------*/
+
 .sec-pitch {
     background-color: #45050D;
     color: #E8D9C1;
     display: flex;
-    gap: 70px;
+    gap: clamp(40px, 5vw, 70px);
     align-items: center;
 }
 
@@ -540,12 +540,14 @@ nav a {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: clamp(10px, 1.5vw, 15px);
 }
 
-.sec-pitch video {
+.sec-pitch iframe {
     width: 100%;
-    height: 400px;
+    max-width: 705px;
+    height: clamp(250px, 28vw, 400px);
+    border-radius: 30px;
 }
 
 .sec-pitch h2,
@@ -554,44 +556,46 @@ nav a {
 }
 
 .sec-pitch h2 {
-    font-size: 55px;
+    font-size: clamp(40px, 5vw, 55px);
     font-weight: 600;
 }
 
 .sec-pitch p {
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
     font-weight: 300;
 }
 
-/*---------cta----------*/
+/*--------- CTA ----------*/
 
 .cta-container {
     background-color: #580209;
-    border-radius: 50px;
-    padding: 50px;
+    border-radius: clamp(30px, 4vw, 50px);
+    padding: clamp(30px, 4vw, 50px);
     color: #E8D9C1;
+    max-width: 1220px;
+    margin: auto;
 }
 
 .cta-container h2 {
     color: #E8D9C1;
-    margin: 0 0 20px 0;
+    margin: 0 0 clamp(15px, 2vw, 20px) 0;
     font-weight: 600;
 }
 
 .cta-container p {
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
     font-weight: 500;
     font-style: italic;
 }
 
 .container-lojas {
     display: flex;
-    gap: 30px;
-    margin-top: 20px;
+    gap: clamp(15px, 3vw, 30px);
+    margin-top: clamp(15px, 2vw, 20px);
 }
 
 .container-lojas img {
-    height: 60px;
+    height: clamp(45px, 5vw, 60px);
 }
 
 

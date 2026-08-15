@@ -6,8 +6,11 @@
 
 @media (max-width: 1000px) {
 
+    /*----------- HERO -----------*/
+
     .hero {
         padding: 0 60px;
+        height: 55vh;
     }
 
     header {
@@ -17,15 +20,97 @@
 
     nav {
         gap: 35px;
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 70px;
     }
 
     .hero p {
         max-width: 50%;
+    }
+
+
+    /*----------- FUNCIONALIDADES -----------*/
+
+    .sec-funcionalidades {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .sec-funcionalidades h2 {
+        width: 80%;
+    }
+
+    .container-cards {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .card-func {
+        width: 100%;
+    }
+
+
+    /*----------- PROFISSIONAIS -----------*/
+
+    .sec-profissionais {
+        height: 800px;
+    }
+
+    .sec-profissionais-content {
+        width: 55%;
+    }
+
+    .sec-profissionais img {
+        max-height: 750px;
+    }
+
+    #frase-match {
+        bottom: 50px;
+        width: 32%;
+    }
+
+    #palavras-chave {
+        bottom: 50px;
+        margin-right: 60px;
+    }
+
+    /*----------- sec tecnologia -----------*/
+
+    .sec-tecnologia {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mockups {
+        position: relative;
+        width: 50%;
+        height: 600px;
+        flex-shrink: 0;
+    }
+
+    .mockups img {
+        width: 50%;
+        max-width: 260px;
+    }
+
+    #mock-resultado {
+        position: absolute;
+        left: 0;
+        bottom: 25%;
+    }
+
+    #mock-chat {
+        position: absolute;
+        z-index: 2;
+        left: 35%;
+        top: 40%;
+        margin-left: 0;
+    }
+
+    .sec-tecnologia-content {
+        width: 50%;
+    }
+
+    .card-tecnologia {
+        width: 100%;
     }
 }
 
@@ -36,6 +121,7 @@
 
     .hero {
         padding: 0 40px;
+        height: 50vh;
     }
 
     header {
@@ -65,6 +151,111 @@
         font-size: 14px;
     }
 
+    /*----------- profissionais -----------*/
+
+
+    .sec-profissionais {
+        height: 700px;
+    }
+
+    .sec-profissionais-content {
+        width: 55%;
+    }
+
+    .sec-profissionais h2 {
+        font-size: clamp(30px, 4vw, 42px);
+    }
+
+    .sec-profissionais img {
+        max-height: clamp(650px, 80vw, 800px);
+    }
+
+    #frase-match {
+        bottom: 40px;
+        width: 35%;
+    }
+
+    #palavras-chave {
+        bottom: 40px;
+        margin-right: 40px;
+    }
+
+    /*----------- sec tecnologia -----------*/
+
+    .sec-tecnologia {
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+    }
+
+    .sec-tecnologia-content {
+        width: 100%;
+        order: 1;
+    }
+
+    .mockups {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        flex-shrink: 0;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        order: 2;
+    }
+
+    .mockups img {
+        width: clamp(180px, 28vw, 240px);
+        max-width: none;
+    }
+
+    #mock-resultado {
+        position: absolute;
+        left: 25%;
+        bottom: 5%;
+    }
+
+    #mock-chat {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 15%;
+        margin-left: 0;
+    }
+
+    .cards-tecnologia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .card-tecnologia {
+        width: 100%;
+    }
+
+    /*----------- video pitch -----------*/
+
+    .sec-pitch {
+        flex-direction: column;
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    .sec-pitch-content {
+        width: 100%;
+        order: 1;
+    }
+
+    .sec-pitch iframe {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        order: 2;
+    }
+
+    /*-------------footer-------------*/
+
     footer {
         padding: 3rem 3rem 1.5rem;
     }
@@ -78,7 +269,6 @@
     }
 }
 
-
 /* Celulares */
 
 @media (max-width: 650px) {
@@ -88,12 +278,39 @@
     }
 
     header {
-        padding-top: 30px;
+        padding: 30px 25px 0;
+        justify-content: flex-end;
     }
 
-    nav {
-        gap: 12px;
-        font-size: 11px;
+    #logo {
+        left: 0;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        z-index: 101;
+    }
+
+    header nav.menu-aberto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        position: absolute;
+        top: 80px;
+        right: 25px;
+
+        padding: 20px 25px;
+
+        background-color: #66060C;
+        border-radius: 15px;
+
+        z-index: 100;
     }
 
     .hero-content {
@@ -122,16 +339,249 @@
         font-size: 12px;
     }
 
+    /*----------- funcionalidades -----------*/
+
+    .sec-funcionalidades {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sec-funcionalidades h2 {
+        width: 100%;
+    }
+
+    .container-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .container-cards .card-func:last-child {
+        grid-column: 1 / 3;
+        width: 50%;
+        justify-self: center;
+    }
+
+    .card-func {
+        width: 100%;
+        padding: 15px 10px;
+        border-radius: 20px;
+    }
+
+    .icon-background {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    /*----------- profissionais -----------*/
+
+    .sec-profissionais {
+        height: 600px;
+    }
+
+    .sec-profissionais-content {
+        width: 40%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .sec-profissionais h2 {
+        font-size: clamp(26px, 7vw, 34px);
+        line-height: 0.95;
+    }
+
+    .sec-profissionais p {
+        width: 100%;
+        font-size: clamp(12px, 3vw, 14px);
+        line-height: 1.3;
+    }
+
+    .sec-profissionais img {
+        width: 100%;
+        max-height: 600px;
+        position: absolute;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        object-position: top;
+        object-fit: cover;
+    }
+
+    #frase-match {
+        bottom: 30px;
+        width: 30%;
+        font-size: clamp(14px, 4.5vw, 26px);
+    }
+
+    #frase-match em {
+        font-size: clamp(15px, 4vw, 19px);
+    }
+
+    #palavras-chave {
+        bottom: 25px;
+        margin-right: 25px;
+        font-size: clamp(11px, 3vw, 14px);
+    }
+
+    /*----------- sec tecnologia -----------*/
+
+    .sec-tecnologia {
+        flex-direction: column;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .sec-tecnologia-content {
+        width: 100%;
+    }
+
+    .cards-tecnologia {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .card-tecnologia {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-icon-card {
+        width: 65px;
+        height: 65px;
+    }
+
+    .card-tecnologia img {
+        padding: 10px;
+    }
+
+    .mockups {
+        width: 100%;
+        height: 380px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mockups img {
+        width: clamp(150px, 45vw, 190px);
+    }
+
+    #mock-resultado {
+        left: 10%;
+        bottom: 5%;
+    }
+
+    #mock-chat {
+        left: 45%;
+        top: 10%;
+    }
+
+    /*----------- video pitch -----------*/
+
+    .sec-pitch iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /*----------- CTA -----------*/
+
+    .cta-container {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 25px;
+    }
+
+    .cta-container h2 {
+        margin-bottom: 12px;
+    }
+
+    .cta-container p {
+        font-size: 14px;
+    }
+
+    .container-lojas {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .container-lojas img {
+        height: 40px;
+    }
+
+    /*---------footer----------*/
+
     footer {
-        padding: 2.5rem 1.5rem 1.5rem;
+        padding: 40px 25px 20px;
     }
 
     .footer-top {
         flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 180px;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+
+    .footer-brand p {
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     .footer-columns {
         width: 100%;
-        gap: 30px;
+        justify-content: center;
+        gap: 35px;
+        text-align: center;
     }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    .footer-column a {
+        font-size: 13px;
+    }
+
+    .footer-column li {
+        margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 650px) {
+
+    .sec-profissionais {
+        height: 700px;
+    }
+
 }
