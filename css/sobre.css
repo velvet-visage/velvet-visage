@@ -9,7 +9,7 @@ section {
 h2 {
     margin: 10px 0;
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(45px, 3.5vw, 55px);
+    font-size: clamp(42px, 3.5vw, 55px);
     font-weight: bold;
     line-height: 1.1;
     color: #66060C;
@@ -22,6 +22,15 @@ h3 {
     color: #66060C;
 }
 
+.menu-hamburguer {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #E8D9C1;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 
 /* =========================================================
    HERO
@@ -29,9 +38,9 @@ h3 {
 
 .hero {
     position: relative;
-    height: 100vh;
-    max-height: 735px;
+    height: clamp(600px, 100vh, 735px);
     padding: 0 clamp(40px, 7vw, 100px);
+
     background-color: #66060C;
     color: #fff;
     overflow: hidden;
@@ -41,16 +50,19 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - clamp(80px, 10vh, 100px));
+
     margin: 0;
-    gap: 30px;
+    gap: clamp(20px, 2.5vw, 30px);
 }
 
 .hero h1 {
     font-family: "Cormorant Garamond", serif;
     color: #E8D9C1;
     text-transform: uppercase;
+
     font-size: clamp(18px, 2.5vw, 30px);
     font-weight: 500;
     line-height: 1.2;
@@ -60,11 +72,13 @@ h3 {
 .img-hero {
     position: absolute;
     bottom: 0;
-    left: clamp(26px, 0vw, 100px);
+    left: clamp(26px, 3vw, 100px);
+
     width: clamp(350px, 45vw, 600px);
     max-width: 60%;
     object-fit: contain;
 }
+
 
 /* =========================================================
    HEADER
@@ -75,8 +89,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 100%;
-    padding: 70px clamp(20px, 5vw, 50px) 0;
+    padding: clamp(50px, 5vw, 70px) clamp(20px, 5vw, 50px) 0;
 }
 
 
@@ -94,9 +109,7 @@ nav {
     justify-content: center;
 
     gap: clamp(8px, 3.5vw, 60px);
-
     font-size: clamp(12px, 1.5vw, 18px);
-
     white-space: nowrap;
 }
 
@@ -108,7 +121,10 @@ nav a {
     font-weight: 600;
 }
 
-/*-----------------------valores--------------------*/
+
+/* =========================================================
+   VALORES
+   ========================================================= */
 
 .sec-valores h3 {
     text-align: center;
@@ -117,9 +133,7 @@ nav a {
 #container-card-valores {
     display: flex;
     justify-content: center;
-
     gap: clamp(20px, 3vw, 40px);
-
     margin: clamp(30px, 4vw, 40px) 0;
 }
 
@@ -127,16 +141,20 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
-    max-width: 230px;
+    max-width: clamp(190px, 16vw, 230px);
     text-align: center;
 }
 
 .card-valores .icon-background {
     width: clamp(110px, 12vw, 150px);
+    aspect-ratio: 1;
+
     border-radius: 50%;
     border: 2px solid #a7a7a754;
     background-color: rgba(223, 223, 222, 0.25);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,60 +163,72 @@ nav a {
 
 .card-valores img {
     padding: clamp(20px, 2.5vw, 30px);
+    width: 100%;
 }
 
 .card-valores h4 {
     color: #66060C;
     font-weight: 500;
-    font-size: 18px;
-    margin: 5px 0;
+    font-size: clamp(16px, 1.5vw, 18px);
+    margin: clamp(5px, 0.5vw, 8px) 0;
 }
 
 .card-valores p {
     color: #484848;
-    font-size: 16px;
+    font-size: clamp(14px, 1.3vw, 16px);
 }
 
-/*-------------proposito---------------*/
+
+/* =========================================================
+   PROPÓSITO
+   ========================================================= */
+
 .sec-proposito {
     background-image: url('../assets/background-proposito.png');
-    background-size: cover;
-    background-position: bottom;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     border-top: 1px solid #D4D4D4;
 }
 
 .sec-proposito h2 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
+    margin-bottom: clamp(20px, 2.5vw, 30px);
+    font-size: clamp(36px, 3.5vw, 40px);
 }
 
 .cards-proposito {
     display: flex;
-    gap: 30px;
-    width: 80%;
+    gap: clamp(20px, 2.5vw, 30px);
+    width: min(80%, 900px);
     justify-content: center;
 }
 
 .card-proposito {
     background-color: #F5EDEA;
-    border-radius: 30px;
+    border-radius: clamp(20px, 2.5vw, 30px);
     border: 2px solid #E2CDC7;
-    padding: 20px;
+    padding: clamp(18px, 2vw, 20px);
+
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: 430px;
+    gap: clamp(15px, 2vw, 20px);
+    width: min(430px, 100%);
 }
 
 .card-proposito .icon-background {
     background-color: #5E0605;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+
+    width: clamp(75px, 8vw, 100px);
+    height: clamp(75px, 8vw, 100px);
+    padding: 15px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,15 +238,19 @@ nav a {
 .card-proposito h4 {
     font-family: "Cormorant Garamond", serif;
     color: #66060C;
-    font-size: 28px;
+    font-size: clamp(23px, 2.2vw, 28px);
     font-weight: 700;
 }
 
 .card-proposito p {
     color: #484848;
+    font-size: clamp(14px, 1.3vw, 16px);
 }
 
-/*---------------equipe----------------*/
+
+/* =========================================================
+   EQUIPE
+   ========================================================= */
 
 .sec-equipe {
     border-top: 1px solid #D4D4D4;
@@ -224,22 +258,22 @@ nav a {
 }
 
 .sec-equipe h2 {
-    margin: 10px 0 20px;
+    margin: 10px 0 clamp(15px, 2vw, 20px);
 }
 
 .equipe-descricao {
     width: min(570px, 100%);
+
     font-size: clamp(17px, 1.5vw, 19px);
     font-weight: 500;
 }
-
 
 .container-equipe {
     display: flex;
     justify-content: space-between;
     gap: clamp(20px, 4vw, 50px);
-    min-width: 85%;
-    margin: 40px auto;
+    width: min(90%, 1100px);
+    margin: clamp(30px, 4vw, 40px) auto;
 }
 
 .card-membro {
@@ -250,7 +284,8 @@ nav a {
 }
 
 .card-membro img {
-    width: 140px;
+    width: clamp(120px, 12vw, 160px);
+    aspect-ratio: 1;
     border-radius: 50%;
     box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -258,16 +293,23 @@ nav a {
 .card-membro h4 {
     color: #66060C;
     font-weight: 500;
-    margin: 15px 0 5px 0;
+    font-size: clamp(15px, 1.4vw, 18px);
+    margin: clamp(10px, 1.5vw, 15px) 0 5px;
 }
 
-/*-----------destaque-----------*/
+
+/* =========================================================
+   DESTAQUE
+   ========================================================= */
+
 .sec-destaque {
     background-image: url('../assets/background-destaque.png');
     background-size: cover;
     background-position: bottom;
-    height: 440px;
+
+    height: clamp(350px, 30vw, 440px);
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,38 +318,41 @@ nav a {
 
 .sec-destaque h2 {
     color: #E8D9C1;
-    font-size: 60px;
+    font-size: clamp(42px, 4vw, 60px);
     font-weight: 600;
-    margin-bottom: 40px;
-    margin-top: 0;
+    margin: 0 0 clamp(25px, 3vw, 40px);
 }
 
 .sec-destaque p {
     color: #E8D9C1;
-    font-size: 18px;
-    width: 40%;
+    font-size: clamp(15px, 1.5vw, 18px);
+    width: min(40%, 600px);
     line-height: 1.5;
     font-weight: 300;
 }
 
-/*------------revista------------*/
+
+/* =========================================================
+   REVISTA
+   ========================================================= */
 
 .sec-revista {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 650px;
+    max-height: 600px;
+    height: 80vh;
     overflow: hidden;
 }
 
 .sec-revista h2 {
-    margin: 15px 0 20px;
+    margin: clamp(10px, 1.5vw, 15px) 0 clamp(15px, 2vw, 20px);
 }
 
 .sec-revista-content {
     align-self: flex-end;
-    width: min(50%, 570px);
+    width: min(55%, 570px);
 }
 
 .sec-revista p {
@@ -317,60 +362,71 @@ nav a {
 
 #mockup-revista {
     position: absolute;
-    left: 10;
-    top: 50%;
-    width: clamp(400px, 40vw, 600px);
-    transform: translateY(-40%);
-    /*ainda n esta fixo, do jeito certo*/
+    left: 10%;
+    top: 5%;
+    width: 25%;
+    object-fit: contain;
 }
 
-/*---------cta-------------*/
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
 
 .sec-cta {
     background-image: url('../assets/silk-background.png');
     background-size: cover;
     background-position: center;
+
     color: #E8D9C1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: clamp(30px, 5vw, 70px);
 }
 
 .sec-cta-content {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: clamp(35px, 5vw, 60px);
+    width: min(50%, 600px);
 }
 
 .sec-cta h2 {
     color: #E8D9C1;
-    margin-bottom: 20px;
-    font-size: 60px;
+    margin-bottom: clamp(15px, 2vw, 20px);
+    font-size: clamp(42px, 4vw, 60px);
     font-weight: 600;
 }
 
 .sec-cta p {
-    font-size: 18px;
+    font-size: clamp(15px, 1.5vw, 18px);
 }
 
 #mockup-splash {
-    width: 40%;
+    width: clamp(280px, 40vw, 500px);
+    max-width: 45%;
 }
 
 .container-lojas {
     display: flex;
-    gap: 30px;
-    margin-top: 20px;
+    gap: clamp(15px, 2.5vw, 30px);
+    margin-top: clamp(15px, 2vw, 20px);
 }
 
 .container-lojas img {
-    height: 65px;
+    height: clamp(45px, 5vw, 65px);
 }
 
-/*-------------tecnologia-------------*/
+
+/* =========================================================
+   TECNOLOGIA
+   ========================================================= */
+
 .sec-tecnologia {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     gap: clamp(30px, 4vw, 40px);
 }
@@ -380,14 +436,15 @@ nav a {
 }
 
 .sec-tecnologia h2 {
-    margin: 20px 0 25px;
+    margin: clamp(15px, 2vw, 20px) 0 clamp(20px, 2.5vw, 25px);
 }
 
 .tabela {
     display: flex;
     justify-content: space-between;
     width: min(50%, 600px);
-    padding-bottom: 25px;
+
+    padding-bottom: clamp(20px, 2vw, 25px);
     border: 1px solid #D7BC91;
 }
 
@@ -397,7 +454,8 @@ nav a {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding: 0 25px;
+    padding: 0 clamp(15px, 2vw, 25px);
+
     color: #66060C;
     text-align: center;
 }
@@ -413,24 +471,26 @@ nav a {
 }
 
 .item-tabela h1 {
-    margin-top: 20px;
+    margin-top: clamp(15px, 2vw, 20px);
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(45px, 5vw, 60px);
+    font-size: clamp(40px, 5vw, 60px);
     font-weight: bold;
 }
 
 .item-tabela p {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: clamp(14px, 1.3vw, 16px);
+    font-size: clamp(12px, 1.3vw, 16px);
 }
+
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
 footer {
-    padding: 3.75rem clamp(40px, 7vw, 100px) 1.5rem;
+    padding:
+        clamp(45px, 4vw, 60px) clamp(40px, 7vw, 100px) clamp(20px, 2vw, 24px);
 
     background: linear-gradient(180deg,
             #310105 0%,
@@ -459,13 +519,13 @@ footer {
 }
 
 .footer-logo {
-    width: clamp(195px, 16vw, 18rem);
-    margin-bottom: 1.25rem;
+    width: clamp(170px, 16vw, 288px);
+    margin-bottom: clamp(15px, 1.5vw, 20px);
 }
 
 .footer-brand p {
     color: #D9D9D9;
-    font-size: 17px;
+    font-size: clamp(14px, 1.4vw, 17px);
     line-height: 1.5;
 }
 
@@ -478,16 +538,16 @@ footer {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
-    gap: clamp(40px, 6vw, 100px);
+    gap: clamp(30px, 6vw, 100px);
 }
 
 .footer-column {
-    min-width: 130px;
+    min-width: clamp(110px, 10vw, 130px);
 }
 
 .footer-column h4 {
-    margin: 0 0 1rem;
-    font-size: 18px;
+    margin: 0 0 clamp(12px, 1vw, 16px);
+    font-size: clamp(15px, 1.5vw, 18px);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -499,12 +559,12 @@ footer {
 }
 
 .footer-column li {
-    margin-bottom: 5px;
+    margin-bottom: clamp(4px, 0.5vw, 5px);
 }
 
 .footer-column a {
     color: #D9D9D9;
-    font-size: 16px;
+    font-size: clamp(14px, 1.3vw, 16px);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -514,16 +574,13 @@ footer {
 }
 
 
-
 /* =========================================================
    FOOTER — PARTE INFERIOR
    ========================================================= */
 
 .footer-bottom {
-    margin-top: 1.5rem;
-
+    margin-top: clamp(20px, 2vw, 24px);
     color: #D9D9D9;
-    font-size: 16px;
-
+    font-size: clamp(13px, 1.3vw, 16px);
     text-align: center;
 }

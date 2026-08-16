@@ -21,6 +21,11 @@
                 <a href="index.html#servicos">Serviços</a>
                 <a href="#">Termos e Privacidade</a>
             </nav>
+
+            <button class="menu-hamburguer" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" id="logo">
         </header>
 
@@ -98,8 +103,13 @@
                 <p>Baixe agora e descubra o melhor de você.</p>
             </div>
             <div class="container-lojas">
-                <img src="assets/download/google-play.png" alt="Disponível na Google Play">
-                <img src="assets/download/app-store.png" alt="Disponível na App Store">
+                <button onclick="alertDownload()">
+                    <img src="assets/download/google-play.png" alt="Disponível na Google Play">
+                </button>
+
+                <button onclick="alertDownload()">
+                    <img src="assets/download/app-store.png" alt="Disponível na App Store">
+                </button>
             </div>
         </div>
         <img src="assets/mockups/mockup-inicial.png" id="mockup-splash" alt="mockup tela splash">
@@ -164,8 +174,21 @@
             <p>@ 2026 Velvet Visage. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="js/card-valores.js"></script>
     <script src="js/card-membros.js"></script>
+    <script>
+        const menuHamburguer = document.querySelector(".menu-hamburguer");
+        const nav = document.querySelector("nav");
+
+        menuHamburguer.addEventListener("click", () => {
+            nav.classList.toggle("menu-aberto");
+        });
+
+        function alertDownload() {
+            alert("Em breve | O aplicativo Velvet Visage ainda não está disponível para download. Estamos preparando tudo para você - volte em breve para descobrir o melhor de você. 💗");
+        }
+    </script>
 </body>
 
 </html>

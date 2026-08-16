@@ -1,26 +1,26 @@
 const membros = [
     {
-        image: "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png",
+        image: "assets/members/ana-machado.png",
         name: "Ana Luíza Machado",
         role: "UI/UX app designer"
     },
     {
-        image: "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png",
+        image: "assets/members/ana-marchiori.png",
         name: "Ana Luíza Marchiori",
         role: "Web designer"
     },
     {
-        image: "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png",
+        image: "assets/members/barbara.png",
         name: "Bárbara Gonçalves",
         role: "UI/UX app designer"
     },
     {
-        image: "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png",
+        image: "assets/members/beatriz.png",
         name: "Beatriz Gagliano",
         role: "Desenvolvedora"
     },
     {
-        image: "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png",
+        image: "assets/members/carol.png",
         name: "Caroline Fantinate",
         role: "Desenvolvedora"
     },

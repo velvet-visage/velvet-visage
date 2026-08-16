@@ -275,7 +275,7 @@
 
     .hero {
         padding: 0 25px;
-        max-height: 60vh;
+        max-height: 90vh;
     }
 
     header {
@@ -318,17 +318,13 @@
         margin-top: 30px;
     }
 
-    h1 {
-        font-size: 48px;
-    }
-
     .subtitle {
         margin-top: -20px;
     }
 
     .hero p {
         max-width: 90%;
-        font-size: 15px;
+        font-size: 14px; 
     }
 
     .hero-buttons {

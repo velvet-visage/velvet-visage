@@ -1,12 +1,63 @@
+ @media (min-width: 851px) and (max-width: 1000px) {
+
+     .hero {
+         height: 80vh;
+     }
+
+     /*---------------proposito----------*/
+
+     .cards-proposito {
+         width: min(100%, 900px);
+     }
+
+     /*-------equipe-----------*/
+
+     .container-equipe {
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         gap: 20px;
+
+         width: 100%;
+         margin: 40px auto;
+     }
+
+     .card-membro {
+         width: 100%;
+         min-width: 0;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     .card-membro h4,
+     .card-membro p {
+         width: 100%;
+         margin-left: 0;
+         margin-right: 0;
+     }
+
+     /*--------revista--------*/
+     .sec-revista {
+         height: 60vh;
+     }
+
+     #mockup-revista {
+         top: auto;
+         bottom: -95px;
+
+         width: clamp(300px, 35vw, 370px);
+         max-width: 30%;
+     }
+
+ }
+
  /* =========================================================
     TABLET — ATÉ 850px
     ========================================================= */
 
  @media (max-width: 850px) {
-
-     /* =========================================================
-       GERAL
-       ========================================================= */
 
      section {
          padding: 60px 50px;
@@ -18,7 +69,7 @@
        ========================================================= */
 
      .hero {
-         height: clamp(600px, 90vh, 700px);
+         height: clamp(600px, 95vh, 700px);
          padding: 0 40px;
      }
 
@@ -42,7 +93,7 @@
      }
 
      .hero h1 {
-         font-size: clamp(20px, 3vw, 26px);
+         font-size: clamp(20px, 3vw, 25px);
          text-align: center;
          white-space: nowrap;
      }
@@ -79,98 +130,82 @@
          width: clamp(100px, 14vw, 160px);
      }
 
-
-     /* =========================================================
-       VALORES
-       ========================================================= */
-
-     #container-card-valores {
-         gap: 20px;
+     /*------------proposito------------*/
+     .cards-proposito {
+         width: min(100%, 900px);
      }
 
-     .card-valores {
-         max-width: 190px;
-     }
-
-     .card-valores img {
-         width: 110px;
-         padding: 22px;
-     }
-
-     .card-valores h4 {
-         font-size: 17px;
-     }
-
-     .card-valores p {
-         font-size: 15px;
-     }
-
-
-     /* =========================================================
-       EQUIPE
-       ========================================================= */
-
+     /*-----------equipe------------*/
      .container-equipe {
-         gap: 20px;
+         gap: 15px;
+         width: 100%;
+         margin: 30px auto;
      }
 
      .card-membro img {
-         width: 110px;
+         width: clamp(100px, 13vw, 130px);
      }
 
      .card-membro h4 {
-         font-size: 15px;
+         font-size: clamp(14px, 1.8vw, 16px);
+         margin: 10px 0 5px;
      }
 
+     .card-membro p {
+         font-size: clamp(12px, 1.5vw, 14px);
+     }
 
-     /* =========================================================
-       REVISTA
-       ========================================================= */
-
+     /*-----------revista------------*/
      .sec-revista {
-         height: 550px;
+         height: clamp(480px, 65vh, 580px);
      }
 
      .sec-revista-content {
-         width: 52%;
+         width: min(50%, 500px);
+     }
+
+     .sec-revista h2 {
+         font-size: 35px;
+     }
+
+     .sec-revista p {
+         font-size: 14px;
      }
 
      #mockup-revista {
-         width: clamp(330px, 42vw, 450px);
+         top: auto;
+         bottom: clamp(-70px, -6vw, -40px);
 
-         left: -10px;
+         width: clamp(260px, 34vw, 340px);
+         max-width: 38%;
      }
 
+     /*---------cta---------*/
+     .sec-cta h2 {
+         font-size: 40px;
+     }
 
-     /* =========================================================
-       TECNOLOGIA
-       ========================================================= */
-
+     /*----------tecnologia-----------*/
      .sec-tecnologia {
-         gap: 25px;
+         flex-direction: column;
+         align-items: center;
+         gap: 40px;
      }
 
      .sec-tecnologia>div:first-child {
-         width: 48%;
+         width: 100%;
+         max-width: 570px;
+         text-align: center;
+     }
+
+     .sec-tecnologia h2 {
+         margin: 10px 0 20px;
      }
 
      .tabela {
-         width: 52%;
-         padding: 0 10px 20px;
+         width: 100%;
+         max-width: 600px;
      }
-
-     .item-tabela {
-         padding: 0 12px;
-     }
-
-     .item-tabela h1 {
-         font-size: clamp(38px, 5vw, 50px);
-     }
-
-     .item-tabela p {
-         font-size: 12px;
-     }
-
 
      /* =========================================================
        FOOTER
@@ -219,11 +254,7 @@
    CELULAR — ATÉ 600px
    ========================================================= */
 
- @media (max-width: 600px) {
-
-     /* =========================================================
-       GERAL
-       ========================================================= */
+ @media (max-width: 650px) {
 
      section {
          padding: 50px 25px;
@@ -237,13 +268,49 @@
          font-size: 15px;
      }
 
+     #logo {
+         left: 0;
+         width: clamp(75px, 20vw, 110px);
+     }
 
-     /* =========================================================
-       HERO
-       ========================================================= */
+     header {
+         padding: 30px 25px 0;
+         justify-content: flex-end;
+     }
+
+     header nav {
+         display: none;
+     }
+
+     nav a {
+        color: #66060C;
+     }
+
+     .menu-hamburguer {
+         display: block;
+         z-index: 101;
+     }
+
+     header nav.menu-aberto {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 20px;
+
+         position: absolute;
+         top: 80px;
+         right: 25px;
+         padding: 20px 25px;
+
+         background-color: #E8D9C1;
+         border-radius: 15px;
+
+         z-index: 100;
+     }
+
 
      .hero {
-         height: 650px;
+         height: 90vh;
          padding: 0 20px;
      }
 
@@ -268,7 +335,6 @@
 
      .hero h1 {
          width: 90%;
-
          font-size: clamp(18px, 5vw, 23px);
          line-height: 1.2;
 
@@ -286,136 +352,309 @@
      }
 
      /* =========================================================
-       HEADER
-       ========================================================= */
-
-     header {
-         padding: 30px 10px 0;
-     }
-
-     nav {
-         gap: 10px;
-         font-size: 10px;
-     }
-
-     #logo {
-         right: -5px;
-
-         width: clamp(75px, 20vw, 110px);
-     }
-
-
-     /* =========================================================
        VALORES
        ========================================================= */
 
+     .sec-valores {
+         padding: 45px 25px;
+     }
+
+     .sec-valores h3 {
+         margin-bottom: 20px;
+         font-size: 14px;
+     }
+
      #container-card-valores {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-
-         gap: 35px 15px;
-
-         margin-top: 30px;
+         flex-direction: column;
+         align-items: center;
+         gap: 28px;
+         margin: 20px 0 0;
      }
 
      .card-valores {
-         max-width: none;
+         width: 100%;
+         max-width: 240px;
+     }
+
+     .card-valores .icon-background {
+         width: 85px;
      }
 
      .card-valores img {
-         width: 90px;
-         padding: 18px;
+         padding: 15px;
      }
 
      .card-valores h4 {
          font-size: 16px;
+         margin: 6px 0 4px;
      }
 
      .card-valores p {
-         font-size: 14px;
+         font-size: 13px;
+         line-height: 1.35;
      }
 
+     /* =========================================================
+       proposito
+       ========================================================= */
+     .sec-proposito {
+         padding: 45px 25px 55px;
+         background-size: cover;
+         background-position: center bottom;
+         background-repeat: no-repeat;
+         gap: 0;
+     }
+
+     .sec-proposito h3 {
+         font-size: 14px;
+         margin-bottom: 8px;
+     }
+
+     .sec-proposito h2 {
+         font-size: clamp(28px, 8vw, 36px);
+         line-height: 1.1;
+         margin: 5px 0 30px;
+     }
+
+     .cards-proposito {
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         gap: 20px;
+     }
+
+     .card-proposito {
+         width: 100%;
+         max-width: 380px;
+         padding: 15px;
+         gap: 15px;
+         border-radius: 22px;
+     }
+
+     .card-proposito .icon-background {
+         width: 60px;
+         height: 60px;
+     }
+
+     .card-proposito .icon-background img {
+         width: 40px;
+     }
+
+     .card-proposito h4 {
+         font-size: 22px;
+         margin-bottom: 3px;
+     }
+
+     .card-proposito p {
+         font-size: 13px;
+         line-height: 1.35;
+     }
 
      /* =========================================================
-       EQUIPE
-       ========================================================= */
+   EQUIPE — MOBILE
+   ========================================================= */
+
+     .sec-equipe {
+         padding: 45px 25px 55px;
+     }
+
+     .sec-equipe h3 {
+         font-size: 13px;
+         margin-bottom: 8px;
+     }
 
      .sec-equipe h2 {
-         margin-bottom: 15px;
+         font-size: clamp(28px, 7vw, 34px);
+         line-height: 1.1;
+         margin: 5px 0 20px;
      }
 
      .equipe-descricao {
          width: 100%;
-         font-size: 16px;
+         max-width: 450px;
+         font-size: 12px;
+         line-height: 1.4;
      }
 
      .container-equipe {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
+         width: 100%;
+         min-width: 0;
+         gap: 35px 15px;
+         margin: 35px auto 0;
+     }
 
-         gap: 35px 20px;
+     .card-membro {
+         width: 100%;
+         min-width: 0;
 
-         margin-top: 35px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         text-align: center;
+     }
+
+     .card-membro:last-child {
+         grid-column: 1 / -1;
+         justify-self: center;
+         width: 50%;
      }
 
      .card-membro img {
-         width: 100px;
+         width: 90px;
+         height: 90px;
+         object-fit: cover;
      }
 
      .card-membro h4 {
          font-size: 14px;
+         margin: 8px 0 3px;
      }
 
+     .card-membro p {
+         font-size: 12px;
+         line-height: 1.3;
+     }
+
+     /*---------destaque------------*/
+
+     .sec-destaque {
+         min-height: 320px;
+         height: auto;
+         padding: 55px 25px;
+         background-size: cover;
+         background-position: center bottom;
+         background-repeat: no-repeat;
+     }
+
+     .sec-destaque h2 {
+         font-size: clamp(28px, 7vw, 36px);
+         line-height: 1.1;
+         margin: 0 0 25px;
+     }
+
+     .sec-destaque p {
+         width: 100%;
+         max-width: 340px;
+         font-size: clamp(12px, 3.5vw, 15px);
+         line-height: 1.45;
+     }
 
      /* =========================================================
-       REVISTA
-       ========================================================= */
+   REVISTA — MOBILE
+   ========================================================= */
 
      .sec-revista {
          height: auto;
-         min-height: 650px;
-
-         justify-content: flex-end;
-
-         padding-bottom: 50px;
-     }
-
-     /*
-       A imagem passa para cima e continua
-       presa ao lado esquerdo.
-    */
-
-     #mockup-revista {
-         top: 0;
-         left: -30px;
-
-         width: clamp(280px, 70vw, 380px);
-
-         transform: none;
+         min-height: 550px;
+         padding: 50px 25px 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+         overflow: hidden;
      }
 
      .sec-revista-content {
-         align-self: flex-end;
-
+         order: 1;
+         align-self: center;
          width: 100%;
-         max-width: 400px;
+         max-width: 380px;
+         text-align: center;
+         z-index: 2;
+     }
+
+     .sec-revista h3 {
+         font-size: 14px;
+         margin: 0 0 8px;
+     }
+
+     .sec-revista h2 {
+         font-size: clamp(28px, 8vw, 36px);
+         line-height: 1.1;
+         margin: 5px 0 18px;
      }
 
      .sec-revista p {
-         font-size: 16px;
+         font-size: 13px;
+         /*min 12px*/
+         line-height: 1.4;
      }
 
+     /* CELULAR DEPOIS */
+     #mockup-revista {
+         order: 2;
+         position: relative;
+         top: auto;
+         left: auto;
+         right: auto;
+         bottom: auto;
+         width: clamp(190px, 48vw, 240px);
+         max-width: 55%;
+         margin-top: 30px;
+         object-fit: contain;
+     }
 
      /* =========================================================
        CTA
        ========================================================= */
 
      .sec-cta {
+         padding: 50px 25px 55px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+         gap: 30px;
+
          text-align: center;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         overflow: hidden;
+     }
+
+     .sec-cta-content {
+         width: 100%;
+         max-width: 360px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 22px;
      }
 
      .sec-cta h2 {
-         margin-bottom: 15px;
+         font-size: clamp(26px, 7vw, 32px);
+         line-height: 1.1;
+         margin: 0 0 12px;
+     }
+
+     .sec-cta p {
+         font-size: 12px;
+         line-height: 1.4;
+     }
+
+     .container-lojas {
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+         margin-top: 5px;
+     }
+
+     .container-lojas img {
+         height: 40px;
+     }
+
+     #mockup-splash {
+         width: clamp(190px, 50vw, 250px);
+         max-width: 70%;
+
+         margin-top: 5px;
+         margin-bottom: 20px;
+
+         object-fit: contain;
      }
 
 
@@ -424,90 +663,99 @@
        ========================================================= */
 
      .sec-tecnologia {
-         flex-direction: column;
-         align-items: center;
-
-         gap: 35px;
+         padding: 45px 30px;
      }
 
      .sec-tecnologia>div:first-child {
          width: 100%;
+         max-width: 380px;
+     }
 
-         text-align: center;
+     .sec-tecnologia h3 {
+         font-size: 14px;
      }
 
      .sec-tecnologia h2 {
-         margin: 15px 0 20px;
+         font-size: clamp(26px, 7vw, 32px);
+         line-height: 1.1;
+
+         margin: 10px 0 18px;
      }
+
+     .sec-tecnologia>div:first-child p {
+         font-size: 12px;
+         line-height: 1.4;
+     }
+
+
+     /* Tabela */
 
      .tabela {
          width: 100%;
+         max-width: 380px;
 
-         padding: 0 5px 20px;
+         padding-bottom: 18px;
      }
 
      .item-tabela {
-         padding: 0 8px;
+         padding: 0 10px;
      }
 
      .item-tabela h1 {
-         font-size: clamp(32px, 10vw, 45px);
+         font-size: clamp(26px, 7vw, 32px);
+         margin-top: 15px;
      }
 
      .item-tabela p {
-         font-size: 11px;
-     }
-
-     .item-tabela:not(:last-child)::after {
-         height: 65%;
+         font-size: clamp(10px, 2.8vw, 12px);
+         line-height: 1.3;
      }
 
 
      /* =========================================================
        FOOTER
        ========================================================= */
+     /*---------footer----------*/
 
      footer {
-         padding: 2.5rem 25px 1.5rem;
+         padding: 40px 25px 20px;
      }
 
      .footer-top {
          flex-direction: column;
          align-items: center;
-
-         gap: 40px;
-
-         text-align: center;
+         gap: 35px;
      }
 
      .footer-brand {
          width: 100%;
-         max-width: 350px;
+         text-align: center;
      }
 
      .footer-logo {
-         width: clamp(180px, 50vw, 220px);
+         width: 180px;
+         margin-bottom: 15px;
+         margin: auto;
      }
 
      .footer-brand p {
-         font-size: 15px;
+         font-size: 14px;
+         line-height: 1.5;
      }
 
      .footer-columns {
-         justify-content: center;
-
          width: 100%;
-
-         gap: 50px;
-
-         text-align: left;
+         justify-content: center;
+         gap: 35px;
+         text-align: center;
      }
 
      .footer-column {
-         min-width: 120px;
+         min-width: 0;
      }
 
      .footer-column h4 {
+         margin-bottom: 12px;
          font-size: 15px;
      }
 
@@ -515,7 +763,12 @@
          font-size: 13px;
      }
 
+     .footer-column li {
+         margin-bottom: 6px;
+     }
+
      .footer-bottom {
+         margin-top: 30px;
          font-size: 13px;
      }
  }
