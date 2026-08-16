@@ -275,6 +275,7 @@
 
     .hero {
         padding: 0 25px;
+        max-height: 60vh;
     }
 
     header {
@@ -445,6 +446,10 @@
         width: 100%;
     }
 
+    .sec-tecnologia h2 {
+        font-size: 30px;
+    }
+
     .cards-tecnologia {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -478,12 +483,12 @@
     }
 
     #mock-resultado {
-        left: 10%;
+        left: 0%;
         bottom: 5%;
     }
 
     #mock-chat {
-        left: 45%;
+        left: 40%;
         top: 10%;
     }
 
@@ -493,6 +498,7 @@
         width: 100%;
         height: auto;
         aspect-ratio: 16 / 9;
+        border-radius: 15px;
     }
 
     /*----------- CTA -----------*/
@@ -518,6 +524,7 @@
 
     .container-lojas img {
         height: 40px;
+        /*fazer a imagem nao ir espremendo*/
     }
 
     /*---------footer----------*/
