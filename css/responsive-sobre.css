@@ -359,12 +359,8 @@
          width: 32%;
      }
 
-     .sec-dados-content h2 {
-         font-size: clamp(1.3rem, 2.6vw, 1.8rem);
-     }
-
-     .sec-dados-content em {
-         font-size: clamp(2rem, 4.8vw, 2.8rem);
+     .sec-dados-content h2,  .sec-dados-content em  {
+         font-size: clamp(1.8rem, 3vw, 2rem);
      }
 
      .sec-dados-content p {
@@ -972,12 +968,8 @@
          width: 100%;
      }
 
-     .sec-dados-content h2 {
+     .sec-dados-content h2, .sec-dados-content em {
          font-size: clamp(1.5rem, 6vw, 2rem);
-     }
-
-     .sec-dados-content em {
-         font-size: clamp(2.2rem, 10vw, 3rem);
      }
 
      .sec-dados-content p {
