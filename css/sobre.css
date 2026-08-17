@@ -254,7 +254,6 @@ nav a {
 
 .sec-equipe {
     border-top: 1px solid #D4D4D4;
-    border-bottom: 1px solid #D4D4D4;
 }
 
 .sec-equipe h2 {
@@ -297,6 +296,230 @@ nav a {
     margin: clamp(10px, 1.5vw, 15px) 0 5px;
 }
 
+/*------------- frase dados----------------*/
+
+.container-frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: clamp(26rem, 29.9vw, 29rem);
+    margin-top: calc(-1 * clamp(60px, 6vw, 80px));
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../assets/wind-fabric.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.frase-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frase-dados h4,
+.frase-dados strong {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.1rem, 1.43vw, 1.375rem);
+    font-weight: 600;
+}
+
+.frase-dados strong {
+    color: #66060C;
+    font-style: italic;
+}
+
+#first-star {
+    margin-bottom: clamp(1.5rem, 2.3vw, 2.1875rem);
+}
+
+.frase-dados .star {
+    width: clamp(1.25rem, 1.7vw, 1.625rem);
+}
+
+.divisa-estrela {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.75rem, 1.3vw, 1.25rem);
+    margin-top: clamp(0.5rem, 0.65vw, 0.625rem);
+}
+
+.linha-lateral {
+    width: clamp(4rem, 5.85vw, 5.625rem);
+    height: 0.9px;
+    background-color: #66060C;
+}
+
+/*--------------dados----------------*/
+
+.sec-dados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-dados-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-dados-content h2 {
+    color: #000;
+    font-weight: 600;
+}
+
+.sec-dados-content em {
+    color: #66060C;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.625rem, 3.5vw, 3.4375rem);
+    font-weight: bolder;
+}
+
+.divisa-subtitulo {
+    height: 1px;
+    background-color: #66060C;
+    width: 20%;
+    margin: clamp(0.5rem, 0.65vw, 0.625rem) 0 clamp(0.75rem, 1vw, 0.9375rem) 0;
+}
+
+.sec-dados-content p {
+    color: #1E1E1E;
+    font-weight: 500;
+    font-size: clamp(0.875rem, 1.17vw, 1.125rem);
+    width: 60%;
+}
+
+.linha-vertical {
+    width: 1px;
+    height: clamp(15rem, 19.5vw, 18.75rem);
+    background-color: #D9CACA;
+    margin-right: clamp(1.875rem, 3.25vw, 3.125rem);
+    flex-shrink: 0;
+}
+
+.container-graficos {
+    width: 85%;
+}
+
+.container-graficos h3 {
+    color: #280104;
+}
+
+.container-graficos p {
+    color: #484848;
+    font-size: clamp(0.7rem, 0.91vw, 0.875rem);
+    font-weight: 500;
+}
+
+/*-------graficos--------*/
+.graficos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: clamp(2rem, 3.25vw, 3.125rem) clamp(0.75rem, 1.3vw, 1.25rem);
+
+    margin-top: clamp(1.25rem, 1.63vw, 1.5625rem);
+}
+
+.dado {
+    width: 100%;
+}
+
+.dado-principal {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(0.5rem, 0.65vw, 0.625rem);
+}
+
+.grafico-rosca {
+    width: clamp(3.125rem, 4.23vw, 4.0625rem);
+    height: clamp(3.125rem, 4.23vw, 4.0625rem);
+    min-width: clamp(3.125rem, 4.23vw, 4.0625rem);
+
+    border-radius: 50%;
+
+    background: conic-gradient(#DFA096 var(--porcentagem),
+            #E9D0CB var(--porcentagem));
+
+    position: relative;
+}
+
+/* Cria o buraco do gráfico */
+
+.grafico-rosca::after {
+    content: "";
+    position: absolute;
+
+    width: clamp(1.625rem, 2.2vw, 2.125rem);
+    height: clamp(1.625rem, 2.2vw, 2.125rem);
+
+    background-color: #EFEDEB;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.dado-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.porcentagem {
+    color: #66060C;
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(1.875rem, 2.47vw, 2.375rem);
+
+    font-weight: 700;
+    line-height: 0.9;
+
+    margin-bottom: clamp(0.25rem, 0.33vw, 0.3125rem);
+}
+
+.dado-info p {
+    color: #484848;
+
+    font-size: clamp(0.625rem, 0.65vw, 0.625rem);
+
+    font-weight: 500;
+    line-height: 1.2;
+
+    width: 100%;
+
+    margin-top: clamp(0.25rem, 0.4vw, 0.375rem);
+}
+
+
+/* Segunda linha - ícones */
+
+.icone-dado {
+    width: clamp(2.5rem, 3.25vw, 3.125rem);
+    height: clamp(2.5rem, 3.25vw, 3.125rem);
+    min-width: clamp(2.5rem, 3.25vw, 3.125rem);
+
+    padding: clamp(0.5rem, 0.65vw, 0.625rem);
+
+    border: 1px solid #66060e3b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #66060C;
+
+    font-size: clamp(1.25rem, 1.7vw, 1.625rem);
+}
 
 /* =========================================================
    DESTAQUE

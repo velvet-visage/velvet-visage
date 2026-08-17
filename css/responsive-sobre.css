@@ -51,6 +51,119 @@
          max-width: 30%;
      }
 
+     /*------------- frase dados ----------------*/
+
+     .container-frase {
+         height: clamp(24rem, 45vw, 28rem);
+     }
+
+     .frase-dados h4,
+     .frase-dados strong {
+         font-size: clamp(1rem, 2.2vw, 1.375rem);
+         text-align: center;
+     }
+
+     .frase-dados .star {
+         width: clamp(1.15rem, 2.5vw, 1.625rem);
+     }
+
+     #first-star {
+         margin-bottom: clamp(1.25rem, 3vw, 2rem);
+     }
+
+     .divisa-estrela {
+         gap: clamp(0.6rem, 2vw, 1.25rem);
+     }
+
+     .linha-lateral {
+         width: clamp(3rem, 8vw, 5.625rem);
+     }
+
+
+     /*-------------- dados ----------------*/
+
+     .sec-dados {
+         gap: clamp(1.5rem, 4vw, 3rem);
+     }
+
+     .sec-dados-content {
+         width: 35%;
+         flex-shrink: 0;
+     }
+
+     .sec-dados-content h2 {
+         font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+     }
+
+     .sec-dados-content em {
+         font-size: clamp(2.25rem, 5vw, 3.4375rem);
+     }
+
+     .sec-dados-content p {
+         width: 85%;
+         font-size: clamp(0.8rem, 1.5vw, 1.125rem);
+     }
+
+     .linha-vertical {
+         height: clamp(14rem, 30vw, 18.75rem);
+         margin-right: 0;
+     }
+
+     .container-graficos {
+         width: 65%;
+     }
+
+
+     /*-------------- títulos dos gráficos ----------------*/
+
+     .container-graficos h3 {
+         font-size: clamp(1rem, 2vw, 1.25rem);
+     }
+
+     .container-graficos p {
+         font-size: clamp(0.65rem, 1.2vw, 0.875rem);
+     }
+
+
+     /*-------------- gráficos ----------------*/
+
+     .graficos-grid {
+         gap: clamp(1.5rem, 4vw, 2.5rem) clamp(0.5rem, 1.5vw, 1.25rem);
+     }
+
+     .dado-principal {
+         gap: clamp(0.4rem, 1vw, 0.625rem);
+     }
+
+     .grafico-rosca {
+         width: clamp(2.75rem, 5.5vw, 4.0625rem);
+         height: clamp(2.75rem, 5.5vw, 4.0625rem);
+         min-width: clamp(2.75rem, 5.5vw, 4.0625rem);
+     }
+
+     .grafico-rosca::after {
+         width: clamp(1.4rem, 3vw, 2.125rem);
+         height: clamp(1.4rem, 3vw, 2.125rem);
+     }
+
+     .porcentagem {
+         font-size: clamp(1.6rem, 3.2vw, 2.375rem);
+     }
+
+     .dado-info p {
+         font-size: clamp(0.55rem, 0.9vw, 0.625rem);
+     }
+
+     .icone-dado {
+         width: clamp(2.25rem, 4.5vw, 3.125rem);
+         height: clamp(2.25rem, 4.5vw, 3.125rem);
+         min-width: clamp(2.25rem, 4.5vw, 3.125rem);
+
+         padding: clamp(0.4rem, 0.8vw, 0.625rem);
+
+         font-size: clamp(1.1rem, 2.2vw, 1.625rem);
+     }
+
  }
 
  /* =========================================================
@@ -207,6 +320,107 @@
          max-width: 600px;
      }
 
+     /*------------- frase dados ----------------*/
+
+     .container-frase {
+         height: clamp(23rem, 48vw, 26rem);
+     }
+
+     .frase-dados h4,
+     .frase-dados strong {
+         font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+     }
+
+     #first-star {
+         margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+     }
+
+     .frase-dados .star {
+         width: clamp(1rem, 2.8vw, 1.4rem);
+     }
+
+     .divisa-estrela {
+         gap: clamp(0.5rem, 1.8vw, 1rem);
+         margin-top: clamp(0.4rem, 0.8vw, 0.6rem);
+     }
+
+     .linha-lateral {
+         width: clamp(2.5rem, 7vw, 4.5rem);
+     }
+
+
+     /*-------------- dados ----------------*/
+
+     .sec-dados {
+         gap: clamp(1rem, 3vw, 2rem);
+     }
+
+     .sec-dados-content {
+         width: 32%;
+     }
+
+     .sec-dados-content h2 {
+         font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+     }
+
+     .sec-dados-content em {
+         font-size: clamp(2rem, 4.8vw, 2.8rem);
+     }
+
+     .sec-dados-content p {
+         width: 90%;
+         font-size: clamp(0.75rem, 1.4vw, 1rem);
+     }
+
+     .linha-vertical {
+         height: clamp(13rem, 28vw, 17rem);
+     }
+
+     .container-graficos {
+         width: 68%;
+     }
+
+
+     /*-------------- gráficos ----------------*/
+
+     .graficos-grid {
+         gap: clamp(1.25rem, 3vw, 2rem) clamp(0.4rem, 1vw, 0.8rem);
+     }
+
+     .dado-principal {
+         gap: clamp(0.3rem, 0.8vw, 0.5rem);
+     }
+
+     .grafico-rosca {
+         width: clamp(2.5rem, 5vw, 3.5rem);
+         height: clamp(2.5rem, 5vw, 3.5rem);
+         min-width: clamp(2.5rem, 5vw, 3.5rem);
+     }
+
+     .grafico-rosca::after {
+         width: clamp(1.25rem, 2.7vw, 1.8rem);
+         height: clamp(1.25rem, 2.7vw, 1.8rem);
+     }
+
+     .porcentagem {
+         font-size: clamp(1.45rem, 3vw, 2rem);
+     }
+
+     .dado-info p {
+         font-size: clamp(0.5rem, 0.8vw, 0.6rem);
+         margin-top: 4px;
+     }
+
+     .icone-dado {
+         width: clamp(2rem, 4.2vw, 2.75rem);
+         height: clamp(2rem, 4.2vw, 2.75rem);
+         min-width: clamp(2rem, 4.2vw, 2.75rem);
+
+         padding: clamp(0.3rem, 0.7vw, 0.5rem);
+
+         font-size: clamp(1rem, 2vw, 1.4rem);
+     }
+
      /* =========================================================
        FOOTER
        ========================================================= */
@@ -251,7 +465,7 @@
 
 
  /* =========================================================
-   CELULAR — ATÉ 600px
+   CELULAR — ATÉ 650px
    ========================================================= */
 
  @media (max-width: 650px) {
@@ -283,7 +497,7 @@
      }
 
      nav a {
-        color: #66060C;
+         color: #66060C;
      }
 
      .menu-hamburguer {
@@ -709,6 +923,169 @@
      .item-tabela p {
          font-size: clamp(10px, 2.8vw, 12px);
          line-height: 1.3;
+     }
+
+     /*------------- frase dados ----------------*/
+
+     .container-frase {
+         height: clamp(21rem, 70vw, 24rem);
+     }
+
+     .frase-dados {
+         padding: 0 1rem;
+     }
+
+     .frase-dados h4,
+     .frase-dados strong {
+         font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+         text-align: center;
+     }
+
+     #first-star {
+         margin-bottom: clamp(1rem, 4vw, 1.5rem);
+     }
+
+     .frase-dados .star {
+         width: clamp(0.9rem, 4vw, 1.25rem);
+     }
+
+     .divisa-estrela {
+         gap: clamp(0.4rem, 2.5vw, 0.8rem);
+         margin-top: 0.5rem;
+     }
+
+     .linha-lateral {
+         width: clamp(2rem, 10vw, 3.5rem);
+     }
+
+
+     /*-------------- dados ----------------*/
+
+     .sec-dados {
+         flex-direction: column;
+         align-items: stretch;
+         justify-content: flex-start;
+         gap: 2rem;
+     }
+
+     .sec-dados-content {
+         width: 100%;
+     }
+
+     .sec-dados-content h2 {
+         font-size: clamp(1.5rem, 6vw, 2rem);
+     }
+
+     .sec-dados-content em {
+         font-size: clamp(2.2rem, 10vw, 3rem);
+     }
+
+     .sec-dados-content p {
+         width: 100%;
+         max-width: 500px;
+         font-size: clamp(0.85rem, 3vw, 1rem);
+     }
+
+
+     /*------------- linha divisória ----------------*/
+
+     .linha-vertical {
+         width: 100%;
+         height: 1px;
+
+         margin: 0;
+
+         background-color: #D9CACA;
+     }
+
+
+     /*-------------- gráficos ----------------*/
+
+     .container-graficos {
+         width: 100%;
+     }
+
+     .container-graficos h3 {
+         font-size: clamp(1rem, 4vw, 1.2rem);
+     }
+
+     .container-graficos p {
+         font-size: clamp(0.7rem, 2.8vw, 0.875rem);
+         line-height: 1.4;
+     }
+
+     .graficos-grid {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, auto);
+
+         gap: 2rem 1rem;
+
+         margin-top: 1.5rem;
+     }
+
+     .dado:nth-child(1) {
+         grid-column: 1;
+         grid-row: 1;
+     }
+
+     .dado:nth-child(2) {
+         grid-column: 1;
+         grid-row: 2;
+     }
+
+     .dado:nth-child(3) {
+         grid-column: 1;
+         grid-row: 3;
+     }
+
+     .dado:nth-child(4) {
+         grid-column: 2;
+         grid-row: 1;
+     }
+
+     .dado:nth-child(5) {
+         grid-column: 2;
+         grid-row: 2;
+     }
+
+     .dado:nth-child(6) {
+         grid-column: 2;
+         grid-row: 3;
+     }
+
+     .dado-principal {
+         gap: 0.5rem;
+     }
+
+     .grafico-rosca {
+         width: clamp(2.75rem, 12vw, 3.5rem);
+         height: clamp(2.75rem, 12vw, 3.5rem);
+         min-width: clamp(2.75rem, 12vw, 3.5rem);
+     }
+
+     .grafico-rosca::after {
+         width: clamp(1.4rem, 6vw, 1.8rem);
+         height: clamp(1.4rem, 6vw, 1.8rem);
+     }
+
+     .porcentagem {
+         font-size: clamp(1.6rem, 7vw, 2rem);
+     }
+
+     .dado-info p {
+         font-size: clamp(0.55rem, 2.2vw, 0.65rem);
+         line-height: 1.25;
+         margin-top: 0.3rem;
+     }
+
+     .icone-dado {
+         width: clamp(2.5rem, 10vw, 3rem);
+         height: clamp(2.5rem, 10vw, 3rem);
+         min-width: clamp(2.5rem, 10vw, 3rem);
+
+         padding: 0.4rem;
+
+         font-size: clamp(1.1rem, 5vw, 1.5rem);
      }
 
 
