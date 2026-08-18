@@ -164,6 +164,101 @@
          font-size: clamp(1.1rem, 2.2vw, 1.625rem);
      }
 
+     /*---------------- INTRO CONTEXTO ----------------*/
+
+     .sec-intro-contexto {
+         padding: 60px 90px;
+     }
+
+     .sec-intro-contexto-content {
+         gap: 50px;
+     }
+
+     .sec-intro-contexto h2 {
+         font-size: 32px;
+     }
+
+     .sec-intro-contexto h3 {
+         font-size: 13px;
+     }
+
+     .sec-intro-contexto p {
+         font-size: 13px;
+         max-width: 280px;
+     }
+
+
+     /*---------------- CONTEXTO ----------------*/
+
+     .sec-contexto {
+         padding-left: 80px;
+         padding-right: 80px;
+
+         gap: 50px;
+
+         margin-top: -300px;
+         padding-top: 250px;
+     }
+
+     .sec-contexto h2 {
+         min-width: 0;
+         font-size: 36px;
+     }
+
+     .sec-contexto p {
+         font-size: 17px;
+         min-width: 0;
+         width: 80%;
+     }
+
+     .sec-contexto h3 {
+         font-size: 18px;
+         margin-top: 45px;
+     }
+
+     .sec-contexto-content {
+         width: 55%;
+     }
+
+
+     /*------------- CONTEXTO ESQUERDA -------------*/
+
+     .contexto-esquerda {
+         width: 40%;
+         flex-shrink: 0;
+     }
+
+     .contexto-item {
+         gap: 18px;
+     }
+
+     .contexto-icone {
+         width: 78px;
+         height: 78px;
+         padding: 13px;
+     }
+
+     .contexto-icone img {
+         width: 42px;
+     }
+
+     .contexto-texto {
+         width: 170px;
+     }
+
+     .contexto-texto h4 {
+         font-size: 14px;
+     }
+
+     .contexto-texto p {
+         font-size: 13px;
+         width: 100%;
+     }
+
+     .contexto-linha {
+         height: 28px;
+         margin-left: 38px;
+     }
  }
 
  /* =========================================================
@@ -359,7 +454,8 @@
          width: 32%;
      }
 
-     .sec-dados-content h2,  .sec-dados-content em  {
+     .sec-dados-content h2,
+     .sec-dados-content em {
          font-size: clamp(1.8rem, 3vw, 2rem);
      }
 
@@ -415,6 +511,110 @@
          padding: clamp(0.3rem, 0.7vw, 0.5rem);
 
          font-size: clamp(1rem, 2vw, 1.4rem);
+     }
+
+     /*---------------- INTRO CONTEXTO ----------------*/
+
+     .sec-intro-contexto {
+         padding: 55px 60px;
+     }
+
+     .sec-intro-contexto-content {
+         gap: 35px;
+     }
+
+     .sec-intro-contexto h2 {
+         font-size: 28px;
+     }
+
+     .sec-intro-contexto h3 {
+         font-size: 12px;
+     }
+
+     .sec-intro-contexto p {
+         font-size: 12px;
+         max-width: 240px;
+     }
+
+     .sec-intro-contexto .linha-divisa {
+         width: 60px;
+     }
+
+
+     /*---------------- CONTEXTO ----------------*/
+
+     .sec-contexto {
+         padding-left: 60px;
+         padding-right: 60px;
+
+         gap: 35px;
+
+         margin-top: -300px;
+         padding-top: 220px;
+     }
+
+     .sec-contexto h2 {
+         min-width: 0;
+         font-size: 30px;
+     }
+
+     .sec-contexto p {
+         font-size: 15px;
+         min-width: 0;
+         width: 90%;
+     }
+
+     .sec-contexto h3 {
+         font-size: 16px;
+         margin-top: 35px;
+     }
+
+     .sec-contexto-content {
+         width: 55%;
+     }
+
+     .sec-contexto-content .linha-divisa {
+         width: 60px;
+     }
+
+
+     /*------------- CONTEXTO ESQUERDA -------------*/
+
+     .contexto-esquerda {
+         width: 42%;
+         flex-shrink: 0;
+     }
+
+     .contexto-item {
+         gap: 14px;
+     }
+
+     .contexto-icone {
+         width: 68px;
+         height: 68px;
+         padding: 11px;
+     }
+
+     .contexto-icone img {
+         width: 36px;
+     }
+
+     .contexto-texto {
+         width: 160px;
+     }
+
+     .contexto-texto h4 {
+         font-size: 12px;
+     }
+
+     .contexto-texto p {
+         font-size: 11px;
+         width: 100%;
+     }
+
+     .contexto-linha {
+         height: 24px;
+         margin-left: 33px;
      }
 
      /* =========================================================
@@ -758,8 +958,8 @@
 
      .sec-revista {
          height: auto;
-         min-height: 550px;
-         padding: 50px 25px 0;
+         min-height: 600px;
+         padding: 50px 25px 30px;
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -804,6 +1004,7 @@
          width: clamp(190px, 48vw, 240px);
          max-width: 55%;
          margin-top: 30px;
+         margin-bottom: 10px;
          object-fit: contain;
      }
 
@@ -968,7 +1169,8 @@
          width: 100%;
      }
 
-     .sec-dados-content h2, .sec-dados-content em {
+     .sec-dados-content h2,
+     .sec-dados-content em {
          font-size: clamp(1.5rem, 6vw, 2rem);
      }
 
@@ -1078,6 +1280,122 @@
          padding: 0.4rem;
 
          font-size: clamp(1.1rem, 5vw, 1.5rem);
+     }
+
+     /*---------------- INTRO CONTEXTO ----------------*/
+
+     .sec-intro-contexto {
+         height: 500px;
+         padding: 30px;
+
+         background-image: url('../assets/top-silk.png');
+         background-position: top center;
+         background-size: cover;
+     }
+
+     .sec-intro-contexto-content {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+     }
+
+     .sec-intro-contexto h2 {
+         font-size: clamp(25px, 7vw, 32px);
+     }
+
+     .sec-intro-contexto h3 {
+         font-size: 12px;
+     }
+
+     .sec-intro-contexto p {
+         font-size: 13px;
+         max-width: 100%;
+     }
+
+
+     /*---------------- CONTEXTO ----------------*/
+
+     .sec-contexto {
+         flex-direction: column;
+         align-items: stretch;
+
+         height: auto;
+
+         margin-top: -450px;
+
+         padding: 280px 30px 70px;
+
+         gap: 70px;
+
+         background-image: none;
+         background-color: #FAF5F1;
+     }
+
+
+     /*------------- TEXTO PRINCIPAL PRIMEIRO -------------*/
+
+     .sec-contexto-content {
+         width: 100%;
+
+         order: 1;
+     }
+
+     .sec-contexto h2 {
+         min-width: 0;
+         font-size: clamp(28px, 8vw, 36px);
+     }
+
+     .sec-contexto p {
+         width: 100%;
+         min-width: 0;
+         font-size: 16px;
+     }
+
+     .sec-contexto h3 {
+         font-size: 17px;
+         margin-top: 35px;
+     }
+
+
+     /*------------- DADOS / CONTEXTO ESQUERDA -------------*/
+
+     .contexto-esquerda {
+         width: 100%;
+
+         order: 2;
+     }
+
+     .contexto-item {
+         gap: 18px;
+     }
+
+     .contexto-icone {
+         width: 65px;
+         height: 65px;
+         padding: 10px;
+     }
+
+     .contexto-icone img {
+         width: 35px;
+     }
+
+     .contexto-texto {
+         width: auto;
+         flex: 1;
+     }
+
+     .contexto-texto h4 {
+         font-size: 13px;
+     }
+
+     .contexto-texto p {
+         font-size: 12px;
+         width: 100%;
+     }
+
+     .contexto-linha {
+         height: 25px;
+         margin-left: 32px;
      }
 
 
