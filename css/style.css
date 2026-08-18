@@ -674,9 +674,6 @@ nav a:hover::after {
     margin-top: -5px;
 }
 
-
-/*---------------- LOJAS ----------------*/
-
 .container-lojas {
     display: flex;
     flex-direction: column;

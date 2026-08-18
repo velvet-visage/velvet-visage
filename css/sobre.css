@@ -818,15 +818,14 @@ nav a {
    ========================================================= */
 
 footer {
-    padding:
-        clamp(45px, 4vw, 60px) clamp(40px, 7vw, 100px) clamp(20px, 2vw, 24px);
+    padding: clamp(45px, 4vw, 60px) clamp(40px, 7vw, 100px) clamp(20px, 2vw, 24px);
 
-    background: linear-gradient(180deg,
-            #310105 0%,
-            #50040A 45%,
-            #81010C 100%);
+    background-image: url('../assets/background-footer.png');
+    background-position: center;
 
     color: #D9D9D9;
+
+    box-shadow: -10px 0px 15px 10px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -854,7 +853,7 @@ footer {
 
 .footer-brand p {
     color: #D9D9D9;
-    font-size: clamp(14px, 1.4vw, 17px);
+    font-size: clamp(12px, 1.3vw, 15px);
     line-height: 1.5;
 }
 
