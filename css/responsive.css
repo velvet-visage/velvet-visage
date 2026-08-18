@@ -112,6 +112,62 @@
     .card-tecnologia {
         width: 100%;
     }
+
+    /*---------------- CTA ----------------*/
+
+    .cta-container {
+        padding: 50px;
+        gap: 45px;
+    }
+
+    .linha {
+        gap: 15px;
+    }
+
+    .estrela-linha {
+        width: 170px;
+    }
+
+    .cta-container h2 {
+        font-size: 45px;
+    }
+
+    .estrela-linha-vertical {
+        width: 35px;
+    }
+
+    .cta-container h3 {
+        font-size: 16px;
+    }
+
+    .cta-container p {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    .cta-content {
+        width: 52%;
+    }
+
+    .cta-baixar {
+        width: 33%;
+    }
+
+    .cta-baixar em {
+        font-size: 20px;
+    }
+
+
+    /*---------------- LOJAS ----------------*/
+
+    .container-lojas {
+        gap: 13px;
+        margin-top: 18px;
+    }
+
+    .container-lojas img {
+        width: 185px;
+    }
 }
 
 
@@ -254,6 +310,108 @@
         order: 2;
     }
 
+    /*---------------- CTA ----------------*/
+
+    .cta-container {
+        position: relative;
+
+        width: calc(100% - 50px);
+
+        padding: 45px 50px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .linha {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .linha h3 {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .linha .estrela-linha {
+        width: 100%;
+        max-width: 225px;
+    }
+
+    .cta-container h2 {
+        font-size: 40px;
+        line-height: 1.05;
+    }
+
+    .cta-content>.estrela-linha {
+        display: none;
+    }
+
+    .cta-container p {
+        width: 100%;
+        max-width: 500px;
+        margin: 8px auto 15px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .estrela-linha-vertical {
+        position: absolute;
+
+        width: 40px;
+
+        left: 50%;
+        top: 55%;
+
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .cta-baixar {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .cta-baixar h3 {
+        font-size: 18px;
+    }
+
+    .cta-baixar em {
+        font-size: 21px;
+    }
+
+    .cta-baixar p {
+        margin-top: -5px;
+    }
+
+
+    /*---------------- LOJAS ----------------*/
+
+    .container-lojas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
+    }
+
+    .container-lojas img {
+        width: 170px;
+    }
+
     /*-------------footer-------------*/
 
     footer {
@@ -324,7 +482,7 @@
 
     .hero p {
         max-width: 90%;
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .hero-buttons {
@@ -497,30 +655,124 @@
         border-radius: 15px;
     }
 
-    /*----------- CTA -----------*/
+    /*---------------- CTA ----------------*/
 
     .cta-container {
+        position: relative;
+
+        width: calc(100% - 30px);
+
+        padding: 40px 25px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+
+        text-align: center;
+
+        border-radius: 30px;
+    }
+
+    .cta-content {
         width: 100%;
-        padding: 25px 20px;
-        border-radius: 25px;
+    }
+
+    .linha {
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 10px;
+
+        width: 100%;
+    }
+
+    .linha h3 {
+        text-align: center;
+        white-space: nowrap;
+
+        font-size: 12px;
     }
 
     .cta-container h2 {
-        margin-bottom: 12px;
+        font-size: 30px;
+
+        line-height: 1.05;
+
+        margin-top: 12px;
+    }
+
+    .cta-container h2 em {
+        font-size: inherit;
+    }
+
+    .estrela-linha {
+        display: none;
     }
 
     .cta-container p {
-        font-size: 14px;
+        width: 100%;
+        max-width: 330px;
+
+        margin: 8px auto 0;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .estrela-linha-vertical {
+        position: absolute;
+
+        width: 35px;
+
+        left: 50%;
+        top: 48%;
+
+        margin: 0;
+
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .cta-baixar {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        margin-top: 20px;
+    }
+
+    .cta-baixar h3 {
+        font-size: 15px;
+    }
+
+    .cta-baixar em {
+        font-size: 18px;
+    }
+
+    .cta-baixar p {
+        margin-top: -5px;
     }
 
     .container-lojas {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
         gap: 10px;
-        margin-top: 15px;
+
+        margin-top: 12px;
     }
 
     .container-lojas img {
-        height: 40px;
-        /*fazer a imagem nao ir espremendo*/
+        width: clamp(125px, 38vw, 155px);
+
+        border-radius: 12px;
     }
 
     /*---------footer----------*/

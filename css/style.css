@@ -591,37 +591,108 @@ nav a:hover::after {
     font-weight: 300;
 }
 
-/*--------- CTA ----------*/
+/*---------------------CTA----------------*/
 
 .cta-container {
-    background-color: #580209;
+    background-color: #45050D;
+
+    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.2);
+
     border-radius: clamp(30px, 4vw, 50px);
-    padding: clamp(30px, 4vw, 50px);
+
+    padding: clamp(40px, 5vw, 60px);
+
     color: #E8D9C1;
-    max-width: 1220px;
+
+    width: calc(100% - 60px);
+    max-width: 1100px;
+
     margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(30px, 5vw, 70px);
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 1.7vw, 20px);
+}
+
+.estrela-linha {
+    width: clamp(140px, 16.67vw, 200px);
 }
 
 .cta-container h2 {
     color: #E8D9C1;
-    margin: 0 0 clamp(15px, 2vw, 20px) 0;
     font-weight: 600;
+    font-size: clamp(42px, 5vw, 60px);
+    line-height: 1;
+}
+
+.cta-container h2 em {
+    font-family: "Cormorant Garamond", serif;
+    color: #FFB1A1;
+}
+
+.cta-container h3 {
+    color: #E8D9C1;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: clamp(15px, 1.5vw, 18px);
 }
 
 .cta-container p {
-    font-size: clamp(15px, 1.5vw, 18px);
-    font-weight: 500;
-    font-style: italic;
+    width: clamp(70%, 30vw, 60%);
+    margin-top: 5px;
+    font-size: clamp(13px, 1.25vw, 16px);
+    line-height: 1.5;
 }
+
+.cta-content {
+    width: clamp(50%, 45vw, 55%);
+}
+
+.cta-baixar {
+    width: clamp(30%, 25vw, 35%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-baixar em {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(18px, 1.83vw, 22px);
+}
+
+.cta-baixar p {
+    margin-top: -5px;
+}
+
+
+/*---------------- LOJAS ----------------*/
 
 .container-lojas {
     display: flex;
-    gap: clamp(15px, 3vw, 30px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: clamp(12px, 1.5vw, 15px);
+
     margin-top: clamp(15px, 2vw, 20px);
 }
 
 .container-lojas img {
-    height: clamp(45px, 5vw, 60px);
+    width: clamp(170px, 16.67vw, 200px);
+
+    border: 2px solid #CA844F;
+    border-radius: 15px;
 }
 
 .container-lojas button {
@@ -630,6 +701,7 @@ nav a:hover::after {
     background: transparent;
     cursor: pointer;
     border-radius: 20px;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -637,7 +709,6 @@ nav a:hover::after {
     transform: translateY(-8px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 /* =========================================================
    FOOTER
