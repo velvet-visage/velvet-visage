@@ -1,0 +1,437 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: clamp(45px, 4vw, 60px) clamp(40px, 7vw, 100px) clamp(20px, 2vw, 24px);
+
+    background-image: url('../assets/background-footer.png');
+    background-position: center;
+    background-size: cover;
+
+    color: #D9D9D9;
+
+    box-shadow: -10px 0px 15px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   PARTE SUPERIOR
+   ========================================================= */
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    gap: clamp(30px, 5vw, 60px);
+}
+
+
+/* =========================================================
+   FOOTER — MARCA
+   ========================================================= */
+
+.footer-brand {
+    width: min(350px, 35%);
+}
+
+.footer-logo {
+    width: clamp(170px, 16vw, 288px);
+    margin-bottom: clamp(15px, 1.5vw, 20px);
+}
+
+.footer-brand p {
+    color: #D9D9D9;
+    font-size: clamp(12px, 1.3vw, 15px);
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER — COLUNAS
+   ========================================================= */
+
+.footer-columns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: clamp(30px, 6vw, 100px);
+}
+
+.footer-column {
+    min-width: clamp(110px, 10vw, 130px);
+}
+
+footer h4 {
+    margin: 0 0 clamp(12px, 1vw, 16px);
+    font-size: clamp(15px, 1.5vw, 18px);
+    font-weight: 500;
+    letter-spacing: clamp(1px, 0.15vw, 1.5px);
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: clamp(4px, 0.5vw, 5px);
+}
+
+.footer-column a {
+    color: #D9D9D9;
+    font-size: clamp(14px, 1.3vw, 16px);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #E8D9C1;
+}
+
+
+/* =========================================================
+   DIVISOR
+   ========================================================= */
+
+footer .divisa-vertical {
+    height: clamp(140px, 13vw, 200px);
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+   ========================================================= */
+
+.social-icons {
+    display: flex;
+    gap: clamp(10px, 1.2vw, 15px);
+    margin-bottom: clamp(7px, 0.8vw, 10px);
+}
+
+.social-icons i {
+    font-size: clamp(28px, 3vw, 36px);
+}
+
+
+/* =========================================================
+   FOOTER — PARTE INFERIOR
+   ========================================================= */
+
+.footer-bottom {
+    margin-top: clamp(20px, 2vw, 24px);
+    color: #D9D9D9;
+    font-size: clamp(13px, 1.3vw, 16px);
+    text-align: center;
+}
+
+@media (min-width: 851px) and (max-width: 1000px) {
+    footer {
+        padding: clamp(40px, 5vw, 50px) clamp(35px, 5vw, 60px) clamp(18px, 2vw, 22px);
+    }
+
+
+    /* ---------------- PARTE SUPERIOR ---------------- */
+
+    .footer-top {
+        gap: clamp(25px, 4vw, 40px);
+    }
+
+    .footer-brand {
+        width: min(280px, 32%);
+    }
+
+    .footer-logo {
+        width: clamp(150px, 17vw, 210px);
+        margin-bottom: clamp(12px, 1.5vw, 16px);
+    }
+
+    footer p {
+        font-size: clamp(11px, 1.3vw, 14px);
+    }
+
+
+    /* ---------------- COLUNAS ---------------- */
+
+    .footer-columns {
+        width: 55%;
+        gap: clamp(20px, 4vw, 50px);
+    }
+
+    .footer-column {
+        min-width: clamp(90px, 10vw, 115px);
+    }
+
+    footer h4 {
+        margin-bottom: clamp(10px, 1vw, 14px);
+        font-size: clamp(13px, 1.5vw, 16px);
+        letter-spacing: clamp(0.8px, 0.12vw, 1.2px);
+    }
+
+    .footer-column li {
+        margin-bottom: clamp(3px, 0.4vw, 5px);
+    }
+
+    .footer-column a {
+        font-size: clamp(12px, 1.3vw, 14px);
+    }
+
+    footer .divisa-vertical {
+        height: clamp(120px, 14vw, 160px);
+    }
+
+
+    /* ---------------- REDES SOCIAIS ---------------- */
+
+    .social-icons {
+        gap: clamp(8px, 1vw, 12px);
+        margin-bottom: clamp(6px, 0.8vw, 8px);
+    }
+
+    .social-icons i {
+        font-size: clamp(24px, 3vw, 30px);
+    }
+
+
+    /* ---------------- PARTE INFERIOR ---------------- */
+
+    .footer-bottom {
+        margin-top: clamp(18px, 2vw, 22px);
+        font-size: clamp(11px, 1.3vw, 14px);
+    }
+}
+
+@media (max-width: 850px) {
+    footer {
+        padding: clamp(35px, 5vw, 45px) clamp(30px, 5vw, 50px) clamp(18px, 2vw, 22px);
+    }
+
+
+    /* ---------------- PARTE SUPERIOR ---------------- */
+
+    .footer-top {
+        gap: clamp(20px, 4vw, 35px);
+    }
+
+
+    /* ---------------- MARCA ---------------- */
+
+    .footer-brand {
+        width: 25%;
+    }
+
+    .footer-logo {
+        width: clamp(130px, 17vw, 180px);
+        margin-bottom: clamp(10px, 1.5vw, 14px);
+    }
+
+    footer p {
+        font-size: clamp(10px, 1.3vw, 13px);
+    }
+
+
+    /* ---------------- COLUNAS ---------------- */
+
+    .footer-columns {
+        width: 65%;
+        gap: clamp(15px, 3vw, 35px);
+    }
+
+    .footer-column {
+        min-width: clamp(80px, 9vw, 105px);
+    }
+
+    footer h4 {
+        margin-bottom: clamp(8px, 1vw, 12px);
+        font-size: clamp(12px, 1.5vw, 15px);
+        letter-spacing: clamp(0.6px, 0.1vw, 1px);
+    }
+
+    .footer-column li {
+        margin-bottom: clamp(3px, 0.4vw, 4px);
+    }
+
+    .footer-column a {
+        font-size: clamp(11px, 1.3vw, 13px);
+    }
+
+    footer .divisa-vertical {
+        display: none;
+    }
+
+
+    /* ---------------- REDES SOCIAIS ---------------- */
+
+    .social-icons {
+        gap: clamp(7px, 1vw, 10px);
+        margin-bottom: clamp(5px, 0.8vw, 7px);
+    }
+
+    .social-icons i {
+        font-size: clamp(22px, 3vw, 27px);
+    }
+
+
+    /* ---------------- PARTE INFERIOR ---------------- */
+
+    .footer-bottom {
+        margin-top: clamp(16px, 2vw, 20px);
+        font-size: clamp(10px, 1.3vw, 13px);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    footer {
+        padding: 40px 25px 18px;
+    }
+
+
+    /* =====================================================
+       PARTE SUPERIOR
+       ===================================================== */
+
+    .footer-top {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "brand brand"
+            "nav suporte"
+            "social social";
+
+        justify-items: center;
+        align-items: start;
+
+        column-gap: 25px;
+        row-gap: 30px;
+
+        text-align: center;
+    }
+
+    /* =====================================================
+       MARCA
+       ===================================================== */
+
+     .footer-brand {
+        grid-area: brand;
+
+        width: 100%;
+        max-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: clamp(150px, 45vw, 190px);
+        margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+        font-size: clamp(11px, 3vw, 13px);
+        line-height: 1.5;
+        text-align: center;
+    }
+
+  /* =====================================================
+       NAVEGAÇÃO
+       ===================================================== */
+
+    .footer-top > .footer-column:nth-child(2) {
+        grid-area: nav;
+
+        width: auto;
+        min-width: 100px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       DIVISÓRIA
+       ===================================================== */
+
+    .footer-top > .divisa-vertical {
+        display: none;
+    }
+
+
+    /* =====================================================
+       SUPORTE
+       ===================================================== */
+
+    .footer-top > .footer-column:nth-child(4) {
+        grid-area: suporte;
+
+        width: auto;
+        min-width: 100px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       TÍTULOS
+       ===================================================== */
+
+    footer h4 {
+        margin-bottom: 10px;
+        font-size: clamp(12px, 3.5vw, 15px);
+        letter-spacing: 1px;
+    }
+
+    .footer-column li {
+        margin-bottom: 4px;
+    }
+
+    .footer-column a {
+        font-size: clamp(11px, 3vw, 13px);
+    }
+
+
+    /* =====================================================
+       REDES SOCIAIS
+       ===================================================== */
+
+    .footer-social {
+        grid-area: social;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 6px;
+    }
+
+    .social-icons i {
+        font-size: clamp(24px, 7vw, 30px);
+    }
+
+    .footer-social p {
+        font-size: clamp(11px, 3vw, 13px);
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       PARTE INFERIOR
+       ===================================================== */
+
+    .footer-bottom {
+        margin-top: 25px;
+        padding-top: 15px;
+
+        font-size: clamp(10px, 2.8vw, 12px);
+        line-height: 1.5;
+        text-align: center;
+    }
+}

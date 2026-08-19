@@ -92,3 +92,49 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* =========================================================
+   BOTÃO VOLTAR AO TOPO
+   ========================================================= */
+#btn-topo {
+    position: fixed;
+    right: clamp(20px, 3vw, 40px);
+    bottom: clamp(20px, 3vw, 35px);
+
+    width: clamp(40px, 4vw, 50px);
+    height: clamp(40px, 4vw, 50px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 201, 192, 0.5);
+    color: #66060C;
+
+    font-size: clamp(16px, 1.5vw, 20px);
+
+    cursor: pointer;
+    z-index: 9999;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+}
+
+#btn-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-topo:hover {
+    transform: translateY(-3px);
+    background-color: rgba(239, 190, 181, 0.7);
+}

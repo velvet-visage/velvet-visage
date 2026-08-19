@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="assets/icons/icon-velvet-visage.png" type="image/x-icon">
 </head>
 
@@ -16,16 +17,16 @@
         <header>
             <nav>
                 <a href="#" class="atual">Início</a>
-                <a href="sobre.html">A Velvet</a>
-                <a href="#">Métodos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#">Termos e Privacidade</a>
+                <a href="sobre.html">O Velvet</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="sobre.html#equipe">Quem Somos</a>
+                <a href="#"
+                    onclick="alert('Os termos de privacidade ainda estão em desenvolvimento. Em breve, eles estarão disponíveis para acesso.')">Termos
+                    e Privacidade</a>
             </nav>
-
             <button class="menu-hamburguer" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
-
             <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" id="logo">
         </header>
 
@@ -164,10 +165,10 @@
                 <p><em>e comece sua jornada.</em></p>
                 <div class="container-lojas">
                     <button onclick="alertDownload()">
-                        <img src="assets/google-play.png" alt="Disponível na Google Play">
+                        <img src="assets/download/red-google-play.png" alt="Disponível na Google Play">
                     </button>
                     <button onclick="alertDownload()">
-                        <img src="assets/app-store.png" alt="Disponível na App Store">
+                        <img src="assets/download/red-app-store.png" alt="Disponível na App Store">
                     </button>
                 </div>
             </div>
@@ -197,56 +198,93 @@
         </div>
     </section>
     <footer>
+
         <div class="footer-top">
+
+            <!-- MARCA -->
             <div class="footer-brand">
                 <img src="assets/logo-horizontal.png" alt="Velvet Visage Logo" class="footer-logo">
-                <p>Tecnologia e beleza caminhando juntos pensando em você.</p>
+
+                <p>
+                    Tecnologia e beleza caminhando
+                    juntos pensando em você.
+                </p>
             </div>
 
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">A Velvet</a></li>
-                        <li><a href="#">Recursos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Equipe</a></li>
-                    </ul>
+
+            <!-- NAVEGAÇÃO -->
+            <div class="footer-column">
+                <h4>Navegação</h4>
+
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">O Velvet</a></li>
+                    <li><a href="index.html#servicos">Recursos</a></li>
+                    <li><a href="sobre.html#equipe">Quem Somos</a></li>
+                </ul>
+            </div>
+
+
+            <!-- DIVISÓRIA -->
+            <img src="assets/vertical-star-line.png" alt="divisa-estrela" class="divisa-vertical">
+
+
+            <!-- SUPORTE -->
+            <div class="footer-column">
+                <h4>Suporte</h4>
+
+                <ul>
+                    <li><a href="sobre.html#contato">Fale Conosco</a></li>
+                    <li><a href="#"
+                            onclick="alert('A política de privacidade ainda está em desenvolvimento. Em breve, estará disponível para acesso.')">Política
+                            de Privacidade</a></li>
+                    <li><a href="#"
+                            onclick="alert('Os termos de uso ainda estão em desenvolvimento. Em breve, eles estarão disponíveis para acesso.')">Termos
+                            de Uso</a></li>
+                </ul>
+            </div>
+
+
+            <!-- REDES SOCIAIS -->
+            <div class="footer-social">
+                <h4>Siga a Velvet</h4>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=velvet.visage2026@gmail.com&su=Contato%20-%20Velvet%20Visage"
+                        target="_blank" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div>
 
-                <div class="footer-column">
-                    <h4>Suporte</h4>
-                    <ul>
-                        <li><a href="#">Central de Ajuda</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                    </ul>
-                </div>
+                <p>
+                    Acompanhe novidades, dicas<br>
+                    e inspirações todos os dias.
+                </p>
             </div>
+
         </div>
 
+
+        <!-- PARTE INFERIOR -->
         <div class="footer-bottom">
             <p>@ 2026 Velvet Visage. Todos os direitos reservados.</p>
         </div>
+
     </footer>
+
+    <button id="btn-topo" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="js/cards-func.js"></script>
     <script src="js/cards-tech.js"></script>
     <script src="js/carrossel.js"></script>
-    <script>
-        const menuHamburguer = document.querySelector(".menu-hamburguer");
-        const nav = document.querySelector("nav");
-
-        menuHamburguer.addEventListener("click", () => {
-            nav.classList.toggle("menu-aberto");
-        });
-
-        function alertDownload() {
-            alert("Em breve | O aplicativo Velvet Visage ainda não está disponível para download. Estamos preparando tudo para você - volte em breve para descobrir o melhor de você. 💗");
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

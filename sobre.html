@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/responsive-sobre.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="assets/icons/icon-velvet-visage.png" type="image/x-icon">
 </head>
 
@@ -16,10 +17,12 @@
         <header>
             <nav>
                 <a href="index.html">Início</a>
-                <a href="#" class="atual">A Velvet</a>
-                <a href="#">Métodos</a>
+                <a href="#" class="atual">O Velvet</a>
                 <a href="index.html#servicos">Serviços</a>
-                <a href="#">Termos e Privacidade</a>
+                <a href="#equipe">Quem Somos</a>
+                <a href="#"
+                    onclick="alert('Os termos de privacidade ainda estão em desenvolvimento. Em breve, eles estarão disponíveis para acesso.')">Termos
+                    e Privacidade</a>
             </nav>
             <button class="menu-hamburguer" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
@@ -366,8 +369,12 @@
 
                 <ul>
                     <li><a href="sobre.html#contato">Fale Conosco</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#"
+                            onclick="alert('A política de privacidade ainda está em desenvolvimento. Em breve, estará disponível para acesso.')">Política
+                            de Privacidade</a></li>
+                    <li><a href="#"
+                            onclick="alert('Os termos de uso ainda estão em desenvolvimento. Em breve, eles estarão disponíveis para acesso.')">Termos
+                            de Uso</a></li>
                 </ul>
             </div>
 
@@ -378,11 +385,12 @@
 
                 <div class="social-icons">
                     <a href="#" aria-label="Instagram">
-                        <img src="assets/icons/instagram.png" alt="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#" aria-label="E-mail">
-                        <img src="assets/icons/email.png" alt="E-mail">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=velvet.visage2026@gmail.com&su=Contato%20-%20Velvet%20Visage"
+                        target="_blank" aria-label="E-mail">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
 
@@ -402,23 +410,16 @@
 
     </footer>
 
+    <button id="btn-topo" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="js/card-valores.js"></script>
     <script src="js/card-membros.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
-    <script>
-        const menuHamburguer = document.querySelector(".menu-hamburguer");
-        const nav = document.querySelector("nav");
-
-        menuHamburguer.addEventListener("click", () => {
-            nav.classList.toggle("menu-aberto");
-        });
-
-        function alertDownload() {
-            alert("Em breve | O aplicativo Velvet Visage ainda não está disponível para download. Estamos preparando tudo para você - volte em breve para descobrir o melhor de você. 💗");
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

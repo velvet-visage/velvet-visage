@@ -1,7 +1,7 @@
  @media (min-width: 851px) and (max-width: 1000px) {
 
      .hero {
-         height: 80vh;
+         height: 600px;
      }
 
      /*---------------proposito----------*/
@@ -87,16 +87,13 @@
      }
 
      .sec-dados-content {
-         width: 35%;
+         width: 40%;
          flex-shrink: 0;
      }
 
-     .sec-dados-content h2 {
-         font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-     }
-
+     .sec-dados-content h2,
      .sec-dados-content em {
-         font-size: clamp(2.25rem, 5vw, 3.4375rem);
+         font-size: 36px;
      }
 
      .sec-dados-content p {
@@ -477,7 +474,7 @@
      }
 
      .sec-dados-content {
-         width: 32%;
+         width: 40%;
      }
 
      .sec-dados-content h2,
@@ -713,47 +710,6 @@
      .container-cards-contato .linha-divisa {
          width: clamp(20%, 3vw, 30%);
      }
-
-     /* =========================================================
-       FOOTER
-       ========================================================= */
-
-     footer {
-         padding: 3rem 50px 1.5rem;
-     }
-
-     .footer-top {
-         gap: 40px;
-     }
-
-     .footer-brand {
-         width: 40%;
-     }
-
-     .footer-logo {
-         width: clamp(180px, 20vw, 220px);
-     }
-
-     .footer-brand p {
-         font-size: 15px;
-     }
-
-     .footer-columns {
-         width: 55%;
-         gap: 40px;
-     }
-
-     .footer-column {
-         min-width: 110px;
-     }
-
-     .footer-column h4 {
-         font-size: 16px;
-     }
-
-     .footer-column a {
-         font-size: 14px;
-     }
  }
 
 
@@ -815,6 +771,7 @@
          z-index: 100;
      }
 
+     /*---------hero---------*/
 
      .hero {
          height: 90vh;
@@ -823,9 +780,9 @@
 
      .hero-content {
          position: absolute;
-
-         top: 120px;
+         top: 50%;
          left: 0;
+         transform: translateY(-50%);
 
          display: flex;
          justify-content: center;
@@ -833,7 +790,6 @@
 
          width: 100%;
          height: auto;
-
          margin: 0;
          padding: 0;
 
@@ -1445,142 +1401,81 @@
 
      /*----------contato----------*/
      .sec-contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start !important;
-        align-items: center;
-        height: auto !important;
-        min-height: 0 !important;
-        gap: 0 !important;
-        padding: clamp(45px, 10vw, 65px) clamp(20px, 7vw, 35px);
-    }
-
-
-    .sec-contato-content {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .sec-contato h3 {
-        font-size: clamp(13px, 3vw, 16px);
-    }
-
-    .sec-contato h2 {
-        font-size: clamp(30px, 8vw, 42px);
-        line-height: 1.05;
-    }
-
-    .sec-contato-content p {
-        width: 100%;
-        max-width: 500px;
-        margin: clamp(10px, 3vw, 15px) auto 0;
-        font-size: clamp(13px, 3.5vw, 17px);
-        line-height: 1.5;
-    }
-
-    .divisa-vertical {
-        transform: rotate(90deg);
-        flex-shrink: 0;
-        height: 250px;
-        margin: -70px 0 -70px;
-    }
-
-
-    /* -------- CARDS -------- */
-
-    .container-cards-contato {
-        width: 100%;
-        margin: 0;
-        gap: clamp(25px, 7vw, 40px);
-    }
-
-    .card-contato {
-        width: 100%;
-        gap: clamp(12px, 3vw, 18px);
-        align-items: center;
-    }
-
-    .icone-contato {
-        width: clamp(50px, 14vw, 65px);
-        height: clamp(50px, 14vw, 65px);
-        font-size: clamp(20px, 5vw, 27px);
-    }
-
-    .card-contato h4 {
-        font-size: clamp(13px, 3.5vw, 17px);
-        margin-bottom: 3px;
-    }
-
-    .card-contato p {
-        font-size: clamp(11px, 3vw, 14px);
-        line-height: 1.4;
-    }
-
-    .container-cards-contato .linha-divisa {
-        width: 55%;
-        margin: 0 auto;
-        background-image: linear-gradient(to right, #cfabae, #66060C, #cfabae);
-    }
-
-
-     /* =========================================================
-       FOOTER
-       ========================================================= */
-     /*---------footer----------*/
-
-     footer {
-         padding: 40px 25px 20px;
-     }
-
-     .footer-top {
+         display: flex;
          flex-direction: column;
+         justify-content: flex-start !important;
          align-items: center;
-         gap: 35px;
+         height: auto !important;
+         min-height: 0 !important;
+         gap: 0 !important;
+         padding: clamp(45px, 10vw, 65px) clamp(20px, 7vw, 35px);
      }
 
-     .footer-brand {
+
+     .sec-contato-content {
          width: 100%;
          text-align: center;
+         margin: 0;
      }
 
-     .footer-logo {
-         width: 180px;
-         margin-bottom: 15px;
-         margin: auto;
+     .sec-contato h3 {
+         font-size: clamp(13px, 3vw, 16px);
      }
 
-     .footer-brand p {
-         font-size: 14px;
+     .sec-contato h2 {
+         font-size: clamp(30px, 8vw, 42px);
+         line-height: 1.05;
+     }
+
+     .sec-contato-content p {
+         width: 100%;
+         max-width: 500px;
+         margin: clamp(10px, 3vw, 15px) auto 0;
+         font-size: clamp(13px, 3.5vw, 17px);
          line-height: 1.5;
      }
 
-     .footer-columns {
+     .divisa-vertical {
+         transform: rotate(90deg);
+         flex-shrink: 0;
+         height: 250px;
+         margin: -70px 0 -70px;
+     }
+
+
+     /* -------- CARDS -------- */
+
+     .container-cards-contato {
          width: 100%;
-         justify-content: center;
-         gap: 35px;
-         text-align: center;
+         margin: 0;
+         gap: clamp(25px, 7vw, 40px);
      }
 
-     .footer-column {
-         min-width: 0;
+     .card-contato {
+         width: 100%;
+         gap: clamp(12px, 3vw, 18px);
+         align-items: center;
      }
 
-     .footer-column h4 {
-         margin-bottom: 12px;
-         font-size: 15px;
+     .icone-contato {
+         width: clamp(50px, 14vw, 65px);
+         height: clamp(50px, 14vw, 65px);
+         font-size: clamp(20px, 5vw, 27px);
      }
 
-     .footer-column a {
-         font-size: 13px;
+     .card-contato h4 {
+         font-size: clamp(13px, 3.5vw, 17px);
+         margin-bottom: 3px;
      }
 
-     .footer-column li {
-         margin-bottom: 6px;
+     .card-contato p {
+         font-size: clamp(11px, 3vw, 14px);
+         line-height: 1.4;
      }
 
-     .footer-bottom {
-         margin-top: 30px;
-         font-size: 13px;
+     .container-cards-contato .linha-divisa {
+         width: 55%;
+         margin: 0 auto;
+         background-image: linear-gradient(to right, #cfabae, #66060C, #cfabae);
      }
  }

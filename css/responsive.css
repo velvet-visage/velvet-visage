@@ -434,20 +434,6 @@
          width: 100%;
          max-width: 600px;
      }
-
-    /*-------------footer-------------*/
-
-    footer {
-        padding: 3rem 3rem 1.5rem;
-    }
-
-    .footer-top {
-        gap: 30px;
-    }
-
-    .footer-columns {
-        width: 60%;
-    }
 }
 
 /* Celulares */
@@ -837,63 +823,6 @@
          font-size: clamp(10px, 2.8vw, 12px);
          line-height: 1.3;
      }
-
-    /*---------footer----------*/
-
-    footer {
-        padding: 40px 25px 20px;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-    }
-
-    .footer-brand {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-logo {
-        width: 180px;
-        margin-bottom: 15px;
-        margin: auto;
-    }
-
-    .footer-brand p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .footer-columns {
-        width: 100%;
-        justify-content: center;
-        gap: 35px;
-        text-align: center;
-    }
-
-    .footer-column {
-        min-width: 0;
-    }
-
-    .footer-column h4 {
-        margin-bottom: 12px;
-        font-size: 15px;
-    }
-
-    .footer-column a {
-        font-size: 13px;
-    }
-
-    .footer-column li {
-        margin-bottom: 6px;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
-        font-size: 13px;
-    }
 }
 
 @media (min-width: 520px) and (max-width: 650px) {
