@@ -32,11 +32,11 @@ Conheça o **Velvet Visage** e descubra mais sobre o aplicativo, suas funcionali
 
 ## 📌 Integrantes do Grupo
 
-- Ana Luíza Machado
-- Ana Luíza Marchiori
-- Bárbara Gonçalves
-- Beatriz Gagliano
-- Caroline Fantinate
+- Ana Luíza Machado de Andrade 
+- Ana Luiza Marchiori Rodrigues 
+- Barbara Gonçalves de Araujo 
+- Beatriz Gagliano Silva 
+- Caroline Fantinate de Assunção 
 
 ---
 
