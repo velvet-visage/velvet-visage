@@ -985,6 +985,10 @@ footer {
     color: #E8D9C1;
 }
 
+footer .divisa-vertical {
+    height: 200px;
+}
+
 
 /* =========================================================
    FOOTER — PARTE INFERIOR
