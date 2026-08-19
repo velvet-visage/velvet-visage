@@ -259,6 +259,52 @@
          height: 28px;
          margin-left: 38px;
      }
+
+     /*-----contato-------*/
+     .sec-contato {
+         padding: clamp(60px, 8vw, 90px) clamp(35px, 6vw, 60px);
+         gap: clamp(30px, 5vw, 50px);
+     }
+
+     .sec-contato-content {
+         width: 48%;
+     }
+
+     .sec-contato h2 {
+         font-size: clamp(38px, 5vw, 55px);
+     }
+
+     .sec-contato-content p {
+         width: 90%;
+         font-size: clamp(17px, 2vw, 21px);
+     }
+
+     .container-cards-contato {
+         width: 48%;
+         gap: clamp(35px, 5vw, 55px);
+     }
+
+     .card-contato {
+         gap: clamp(12px, 2vw, 18px);
+     }
+
+     .card-contato h4 {
+         font-size: clamp(16px, 1.8vw, 20px);
+     }
+
+     .card-contato p {
+         font-size: clamp(14px, 1.6vw, 17px);
+     }
+
+     .icone-contato {
+         width: clamp(60px, 7vw, 75px);
+         height: clamp(60px, 7vw, 75px);
+         font-size: clamp(24px, 3vw, 30px);
+     }
+
+     .container-cards-contato .linha-divisa {
+         width: clamp(25%, 4vw, 30%);
+     }
  }
 
  /* =========================================================
@@ -393,7 +439,7 @@
          font-size: 40px;
      }
 
-    
+
 
      /*------------- frase dados ----------------*/
 
@@ -595,6 +641,77 @@
      .contexto-linha {
          height: 24px;
          margin-left: 33px;
+     }
+
+     /*-----------contato-----------*/
+     .sec-contato {
+         padding: clamp(50px, 7vw, 70px) clamp(25px, 5vw, 45px);
+         gap: clamp(15px, 3vw, 30px);
+         align-items: center;
+     }
+
+     /* -------- CONTEÚDO -------- */
+
+     .sec-contato-content {
+         width: 46%;
+     }
+
+     .sec-contato h3 {
+         font-size: clamp(12px, 1.5vw, 16px);
+         line-height: 1.2;
+     }
+
+     .sec-contato h2 {
+         font-size: clamp(27px, 4vw, 40px);
+         line-height: 1.05;
+     }
+
+     .sec-contato-content p {
+         width: 100%;
+         font-size: clamp(12px, 1.5vw, 16px);
+         line-height: 1.45;
+         margin-top: clamp(10px, 1.5vw, 15px);
+     }
+
+
+     /* -------- DIVISA -------- */
+
+     .divisa-vertical {
+         height: clamp(130px, 20vw, 210px);
+         width: auto;
+         flex-shrink: 0;
+     }
+
+
+     /* -------- CARDS -------- */
+
+     .container-cards-contato {
+         width: 46%;
+         gap: clamp(20px, 3.5vw, 35px);
+     }
+
+     .card-contato {
+         gap: clamp(8px, 1.5vw, 14px);
+     }
+
+     .icone-contato {
+         width: clamp(45px, 5.5vw, 60px);
+         height: clamp(45px, 5.5vw, 60px);
+         font-size: clamp(18px, 2.3vw, 25px);
+     }
+
+     .card-contato h4 {
+         font-size: clamp(12px, 1.5vw, 17px);
+         line-height: 1.2;
+     }
+
+     .card-contato p {
+         font-size: clamp(10px, 1.25vw, 14px);
+         line-height: 1.35;
+     }
+
+     .container-cards-contato .linha-divisa {
+         width: clamp(20%, 3vw, 30%);
      }
 
      /* =========================================================
@@ -1325,6 +1442,86 @@
          height: 25px;
          margin-left: 32px;
      }
+
+     /*----------contato----------*/
+     .sec-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: center;
+        height: auto !important;
+        min-height: 0 !important;
+        gap: 0 !important;
+        padding: clamp(45px, 10vw, 65px) clamp(20px, 7vw, 35px);
+    }
+
+
+    .sec-contato-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .sec-contato h3 {
+        font-size: clamp(13px, 3vw, 16px);
+    }
+
+    .sec-contato h2 {
+        font-size: clamp(30px, 8vw, 42px);
+        line-height: 1.05;
+    }
+
+    .sec-contato-content p {
+        width: 100%;
+        max-width: 500px;
+        margin: clamp(10px, 3vw, 15px) auto 0;
+        font-size: clamp(13px, 3.5vw, 17px);
+        line-height: 1.5;
+    }
+
+    .divisa-vertical {
+        transform: rotate(90deg);
+        flex-shrink: 0;
+        height: 250px;
+        margin: -70px 0 -70px;
+    }
+
+
+    /* -------- CARDS -------- */
+
+    .container-cards-contato {
+        width: 100%;
+        margin: 0;
+        gap: clamp(25px, 7vw, 40px);
+    }
+
+    .card-contato {
+        width: 100%;
+        gap: clamp(12px, 3vw, 18px);
+        align-items: center;
+    }
+
+    .icone-contato {
+        width: clamp(50px, 14vw, 65px);
+        height: clamp(50px, 14vw, 65px);
+        font-size: clamp(20px, 5vw, 27px);
+    }
+
+    .card-contato h4 {
+        font-size: clamp(13px, 3.5vw, 17px);
+        margin-bottom: 3px;
+    }
+
+    .card-contato p {
+        font-size: clamp(11px, 3vw, 14px);
+        line-height: 1.4;
+    }
+
+    .container-cards-contato .linha-divisa {
+        width: 55%;
+        margin: 0 auto;
+        background-image: linear-gradient(to right, #cfabae, #66060C, #cfabae);
+    }
 
 
      /* =========================================================
