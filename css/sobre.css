@@ -811,6 +811,82 @@ nav a {
     height: clamp(45px, 5vw, 65px);
 }
 
+/*--------------contato----------------*/
+.sec-contato {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 150px;
+}
+
+.sec-contato h2 {
+    color: #000;
+    font-size: 70px
+}
+
+.sec-contato-content p {
+    font-size: 25px;
+    color: #1E1E1E;
+    font-weight: 500;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.sec-contato em {
+    font-family: "Cormorant Garamond", serif;
+    color: #66060C;
+    font-weight: 600;
+}
+
+.sec-contato-content {
+    width: 50%;
+}
+
+.container-cards-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 40%;
+}
+
+.container-cards-contato .linha-divisa {
+    width: 25%;
+    height: 1px;
+    background-image: linear-gradient(to right, #cfabae, #66060C);
+}
+
+.card-contato {
+    display: flex;
+    gap: 20px;
+}
+
+.card-contato h4 {
+    color: #66060C;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-contato p {
+    font-size: 18px;
+    color: #484848;
+}
+
+.card-contato p strong {
+    font-weight: 600;
+}
+
+.icone-contato {
+    border: 1px solid #66060C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    font-size: 35px;
+    color: #66060C;
+    flex-shrink: 0;
+}
 
 
 /* =========================================================
