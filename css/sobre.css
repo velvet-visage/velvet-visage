@@ -815,20 +815,23 @@ nav a {
 .sec-contato {
     display: flex;
     justify-content: space-between;
-    padding: 120px 150px;
+    padding: clamp(70px, 8vw, 120px) clamp(40px, 10vw, 150px);
+    gap: clamp(40px, 6vw, 100px);
 }
 
 .sec-contato h2 {
     color: #000;
-    font-size: 70px
+    font-size: clamp(42px, 4.5vw, 70px);
+    line-height: 1.05;
 }
 
 .sec-contato-content p {
-    font-size: 25px;
+    font-size: clamp(18px, 1.6vw, 25px);
     color: #1E1E1E;
     font-weight: 500;
     width: 70%;
-    margin-top: 20px;
+    margin-top: clamp(15px, 1.5vw, 20px);
+    line-height: 1.5;
 }
 
 .sec-contato em {
@@ -844,31 +847,32 @@ nav a {
 .container-cards-contato {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: clamp(35px, 5vw, 70px);
     width: 40%;
 }
 
 .container-cards-contato .linha-divisa {
-    width: 25%;
+    width: 30%;
     height: 1px;
     background-image: linear-gradient(to right, #cfabae, #66060C);
 }
 
 .card-contato {
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.5vw, 20px);
 }
 
 .card-contato h4 {
     color: #66060C;
-    font-size: 22px;
+    font-size: clamp(17px, 1.5vw, 22px);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: clamp(0.5px, 0.1vw, 1px);
 }
 
 .card-contato p {
-    font-size: 18px;
+    font-size: clamp(15px, 1.25vw, 18px);
     color: #484848;
+    line-height: 1.4;
 }
 
 .card-contato p strong {
@@ -881,11 +885,15 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    width: 90px;
-    font-size: 35px;
+    height: clamp(60px, 6vw, 90px);
+    width: clamp(60px, 6vw, 90px);
+    font-size: clamp(24px, 2.3vw, 35px);
     color: #66060C;
     flex-shrink: 0;
+}
+
+.divisa-vertical{
+    height: 80%;
 }
 
 
